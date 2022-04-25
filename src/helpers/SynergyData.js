@@ -1,3 +1,12 @@
+import { readFile, utils } from "xlsx";
+
+let workbook = readFile("../csv/synergy.xlsx");
+let columns = utils.sheet_to_json(workbook.Sheets.Sheet1)
+
+console.log("hey", columns);
+
+console.log(workbook);
+
 /*
     This function grabs the names of the Milestones and Awards from
     the big column on the the Excel spreadsheet and creates a single 
