@@ -1,5 +1,5 @@
 import { Navigate, Routes, Route } from "react-router-dom";
-import { Home } from "./Home";
+import { ScorecardGenerator } from "./ScorecardGenerator/ScorecardGenerator";
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
     const PrivateRoute = ({ children }) => {
@@ -17,7 +17,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 {/* <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
                 <Route exact path="/register" element={<Register />} /> */}
 
-                <Route path="/" element={<Home/>} />
+                <Route path="/" element={<ScorecardGenerator/>} />
                 
             </Routes>
         </>
