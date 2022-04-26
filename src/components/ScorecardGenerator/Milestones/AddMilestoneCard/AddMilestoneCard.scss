@@ -1,8 +1,11 @@
 .crazy {
-    background-color: lightblue;
 
     &:hover {
         background-color: green;
         cursor: pointer;
     }
+}
+
+svg:hover {
+    fill: green;
 }

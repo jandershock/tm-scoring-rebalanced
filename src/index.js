@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { TMScoringRebalanced } from './components/TMScoringRebalanced';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./custom.scss";
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

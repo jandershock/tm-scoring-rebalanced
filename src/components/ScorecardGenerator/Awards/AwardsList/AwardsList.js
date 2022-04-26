@@ -13,7 +13,7 @@ export const AwardsList = () => {
                 <Row>
                     <h1 className="text-center">Awards</h1>
                 </Row>
-                <Row className="justify-content-center mt-2">
+                <Row className="justify-content-between mt-2">
                     {cardArray.map(element => {
                         return (
                             <Col md="2">
