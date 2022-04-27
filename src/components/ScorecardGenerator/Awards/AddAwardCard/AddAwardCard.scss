@@ -2,11 +2,11 @@
 
 
 .hover-style {
-
+    
     &:hover {
-        // background-color: green;
         cursor: pointer;
         border-color: $success;
+        transform: scale(1.01);
 
         svg {
             fill: $success;
@@ -14,7 +14,6 @@
         }
 
         p {
-            font-weight: bold;
             color: $success;
         }
     }

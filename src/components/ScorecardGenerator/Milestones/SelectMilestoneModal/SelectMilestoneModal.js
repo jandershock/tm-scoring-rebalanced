@@ -1,20 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap"
 
-export const SelectMilestoneModal = ({ showProp }) => {
+export const SelectMilestoneModal = ({ milestonesProp }) => {
     // Load all milestones as state?
+    console.log(milestonesProp);
 
     return (
         <>
             <Container>
-                <Row>
-                    <Col>
-                        <h1>Hello</h1>
-                    </Col>
-                    <Col>
-                        <h1>World</h1>
-                    </Col>
-                </Row>
-                <Row>Hello Second Row!</Row>
+                {milestonesProp.map(element => {
+                    <Row>
+                        <p>{element.name}</p>
+                    </Row>
+                })}
             </Container>
         </>
     )

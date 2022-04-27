@@ -14,9 +14,9 @@ export const AwardsList = () => {
                     <h1 className="text-center">Awards</h1>
                 </Row>
                 <Row className="justify-content-between mt-2">
-                    {cardArray.map(element => {
+                    {cardArray.map((element, index) => {
                         return (
-                            <Col md="2">
+                            <Col key={index} md="2">
                                 {element}
                             </Col>
                         )

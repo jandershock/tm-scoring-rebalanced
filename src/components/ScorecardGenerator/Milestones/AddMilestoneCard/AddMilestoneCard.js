@@ -19,8 +19,8 @@ export const AddMilestoneCard = () => {
                     <Logo></Logo>
                 </Card.Body>
             </Card>
-            <Modal show={showModal}>
-                <CloseButton onClick={() => {setShowModal(false)}}></CloseButton>
+            <Modal centered show={showModal}>
+                <CloseButton className="align-self-end" onClick={() => {setShowModal(false)}}></CloseButton>
                 <SelectMilestoneModal></SelectMilestoneModal>
             </Modal>
         </>
