@@ -1,10 +1,10 @@
 import { useState } from "react"
-import { Card, CloseButton, Modal } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import { ReactComponent as Logo } from "../../../../images/add_symbol_blank_background.svg"
 import { SelectMilestoneModal } from "../SelectMilestoneModal/SelectMilestoneModal"
 import "./AddMilestoneCard.scss"
 
-export const AddMilestoneCard = () => {
+export const AddMilestoneCard = ({ milestonesProp }) => {
     const [showModal, setShowModal] = useState(false);
 
     const onClick = () => {
@@ -19,10 +19,7 @@ export const AddMilestoneCard = () => {
                     <Logo></Logo>
                 </Card.Body>
             </Card>
-            <Modal centered show={showModal}>
-                <CloseButton className="align-self-end" onClick={() => {setShowModal(false)}}></CloseButton>
-                <SelectMilestoneModal></SelectMilestoneModal>
-            </Modal>
+            <SelectMilestoneModal milestonesProp={milestonesProp} showModal={showModal} setShowModal={setShowModal}/>
         </>
     )
 }

@@ -4,11 +4,14 @@ import { getAllMilestones } from "../../../../modules/MilestonesAwardsManager"
 import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
 
 export const MilestonesList = () => {
-    // Create an array of all Milestones
+    // Need to wait until milestones are loaded
+    const [milestonesLoaded, setMilestonesLoaded] = useState(false);
+
+    // Create an array for all available Milestones
     const [milestonesArray, setMilestonesArray] = useState([]);
 
-    // Initialize card array with five AddMilestoneCards
-    const [cardArray, setCardArray] = useState(Array(5).fill(<AddMilestoneCard milestonesProp = {milestonesArray}/>))
+    // Create an array for all Milestone cards
+    const [cardArray, setCardArray] = useState([])
 
 
 
@@ -17,9 +20,20 @@ export const MilestonesList = () => {
     useEffect(() => {
         getAllMilestones()
             .then(milestones => {
-                setMilestonesArray(milestones)
+                // Set available milestones array
+                setMilestonesArray(milestones);
+                console.log("setmilestonesarray")
+                console.log(milestonesArray);
+                setMilestonesLoaded(true);
             })
     }, [])
+
+    // Initializes the card array to five empty cards once the milestones are loaded
+    useEffect(() => {
+        console.log(milestonesArray)
+        console.log("setcardarray")
+        setCardArray(Array(5).fill(<AddMilestoneCard milestonesProp={milestonesArray} />))
+    }, [milestonesLoaded])
 
 
     return (
