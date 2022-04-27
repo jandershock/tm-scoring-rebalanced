@@ -1,12 +1,21 @@
-.crazy {
+@import "node_modules/bootstrap/scss/bootstrap/";
+
+
+.hover-style {
 
     &:hover {
-        background-color: green;
+        // background-color: green;
         cursor: pointer;
-    }
-}
+        border-color: $success;
 
-svg:hover {
-    fill: green;
-    cursor: pointer;
+        svg {
+            fill: $success;
+            cursor: pointer;
+        }
+
+        p {
+            font-weight: bold;
+            color: $success;
+        }
+    }
 }
