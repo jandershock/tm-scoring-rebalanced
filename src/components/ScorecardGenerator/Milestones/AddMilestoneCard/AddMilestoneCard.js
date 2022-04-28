@@ -13,7 +13,7 @@ export const AddMilestoneCard = ({ milestonesProp }) => {
 
     return (
         <>
-            <Card onClick={onClick} bg="gray" className="hover-style">
+            <Card onClick={onClick} bg="light" className="hover-style">
                 <Card.Body className="text-center">
                     <p>Add Milestone Card</p>
                     <Logo></Logo>

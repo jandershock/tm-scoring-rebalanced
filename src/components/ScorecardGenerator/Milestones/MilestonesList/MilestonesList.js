@@ -42,10 +42,10 @@ export const MilestonesList = () => {
                 <Row>
                     <h1 className="text-center">Milestones</h1>
                 </Row>
-                <Row className="justify-content-between mt-2">
+                <Row xs="1" md="5">
                     {cardArray.map((element, index) => {
                         return (
-                            <Col key={index} md="2">
+                            <Col key={index} className="px-1 align-items-stretch">
                                 {element}
                             </Col>
                         )

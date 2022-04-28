@@ -1,22 +1,24 @@
 import { Container, Row, Col, Modal, Card, Button } from "react-bootstrap"
 
-export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }) => {
-    // Load all milestones as state?
-    console.log(milestonesProp);
+import "./SelectAwardModal.scss"
+
+
+export const SelectAwardModal = ({ awardsProp, showModal, setShowModal }) => {
+
 
     return (
         <>
             <Modal scrollable size="lg" show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                     <Modal.Title>
-                        <h4>Select Milestones</h4>
+                        <h4>Select Awards</h4>
                         <h5>0/5</h5>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
                         <Row lg="4">
-                            {milestonesProp.map(element => (
+                            {awardsProp.map(element => (
                                 <Col sm="4">
                                     <Card className="mb-3 hover-style-thick">
                                         <Card.Header>
@@ -33,7 +35,7 @@ export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }
                     </Container>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary">Update Milestones</Button>
+                    <Button type="submit">Update Awards</Button>
                 </Modal.Footer>
             </Modal>
         </>
