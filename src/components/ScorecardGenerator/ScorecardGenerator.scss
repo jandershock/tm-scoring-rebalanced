@@ -6,11 +6,11 @@
 
     &:hover {
         .card-header {
-            color: $success;
+            // color: $success;
         }
-        
+
         cursor: pointer;
-        border-color: $success;
+        // border-color: $success;
         transform: scale(1.01);
 
         svg {
@@ -40,4 +40,14 @@
             color: $success;
         }
     }
+}
+
+
+.selected-card {
+    .card-header{
+        color: $primary !important;
+    }
+
+    border-color: $primary !important;
+    transform: scale(1.01);
 }

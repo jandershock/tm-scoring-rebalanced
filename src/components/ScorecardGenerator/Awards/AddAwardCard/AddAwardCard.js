@@ -5,7 +5,7 @@ import { SelectAwardModal } from "../SelectAwardModal/SelectAwardModal"
 import "./AddAwardCard.scss"
 
 export const AddAwardCard = ({awardsProp}) => {
-    const[showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <>

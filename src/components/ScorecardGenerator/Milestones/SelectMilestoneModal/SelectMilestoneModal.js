@@ -1,8 +1,14 @@
-import { Container, Row, Col, Modal, Card, Button } from "react-bootstrap"
+import { useState } from "react";
+import { Container, Row, Col, Modal, Button } from "react-bootstrap"
+import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
 export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }) => {
-    // Load all milestones as state?
-    console.log(milestonesProp);
+
+    const [selectedCard, setSelectedCards] = useState([]);
+
+    for (const el of milestonesProp){
+        console.log(el.type);
+    }
 
     return (
         <>
@@ -18,15 +24,7 @@ export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }
                         <Row lg="4">
                             {milestonesProp.map(element => (
                                 <Col sm="4">
-                                    <Card className="mb-3 hover-style-thick">
-                                        <Card.Header>
-                                            <strong>{element.name}</strong>
-                                        </Card.Header>
-                                        <Card.Img className="p-3" src={`images/card_images${element.img_path}`} />
-                                        <Card.Body>
-                                            Description goes here . . .
-                                        </Card.Body>
-                                    </Card>
+                                    <MilestoneCard milestoneObj={element} />
                                 </Col>
                             ))}
                         </Row>

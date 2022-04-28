@@ -32,7 +32,11 @@ export const MilestonesList = () => {
     useEffect(() => {
         console.log(milestonesArray)
         console.log("setcardarray")
-        setCardArray(Array(5).fill(<AddMilestoneCard milestonesProp={milestonesArray} />))
+        const propsObj = {
+            milestonesProp: milestonesArray,
+            cardArray: cardArray
+        }
+        setCardArray(Array(5).fill(<AddMilestoneCard  { ...propsObj } />))
     }, [milestonesLoaded])
 
 

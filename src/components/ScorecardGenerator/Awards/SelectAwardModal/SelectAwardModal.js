@@ -1,4 +1,6 @@
+import { useState } from "react"
 import { Container, Row, Col, Modal, Card, Button } from "react-bootstrap"
+import { AwardCard } from "../AwardCard/AwardCard"
 
 import "./SelectAwardModal.scss"
 
@@ -20,15 +22,7 @@ export const SelectAwardModal = ({ awardsProp, showModal, setShowModal }) => {
                         <Row lg="4">
                             {awardsProp.map(element => (
                                 <Col sm="4">
-                                    <Card className="mb-3 hover-style-thick">
-                                        <Card.Header>
-                                            <strong>{element.name}</strong>
-                                        </Card.Header>
-                                        <Card.Img className="p-3" src={`images/card_images${element.img_path}`} />
-                                        <Card.Body>
-                                            Description goes here . . .
-                                        </Card.Body>
-                                    </Card>
+                                    <AwardCard awardObj={element}/>
                                 </Col>
                             ))}
                         </Row>
