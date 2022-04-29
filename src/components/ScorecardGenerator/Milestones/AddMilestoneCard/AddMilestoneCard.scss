@@ -20,3 +20,11 @@
         }
     }
 }
+
+.customCardBody {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .text-center;
+    @extend .justify-content-around;
+    @extend .align-items-center;
+}

@@ -51,3 +51,19 @@
     border-color: $primary !important;
     transform: scale(1.01);
 }
+
+// Forces min-height on all child Card classes for specified view width
+@media (min-width: 768px) {
+    .setMinHeight > .card {
+        min-height: 9.7em;
+    }
+}
+
+// Need to apply this to Card.Body if using min-height
+.customCardBody {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .text-center;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
