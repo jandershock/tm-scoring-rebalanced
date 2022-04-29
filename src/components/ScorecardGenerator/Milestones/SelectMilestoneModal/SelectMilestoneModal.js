@@ -2,13 +2,10 @@ import { useState } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap"
 import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
-export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }) => {
+export const SelectMilestoneModal = ({ emptyCardArray, setEmptyCardArray, cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
 
-    const [selectedCards, setSelectedCards] = useState([]);
-
-    for (const el of milestonesProp){
-        console.log(el.type);
-    }
+    console.log("EmptyCardArray: ", emptyCardArray);
+    console.log("cardArray: ", cardArray);
 
     const updateMilestones = () => {
 
@@ -20,7 +17,7 @@ export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }
                 <Modal.Header closeButton>
                     <Modal.Title>
                         <h4>Select Milestones</h4>
-                        <h5>0/5</h5>
+                        <h5>{cardArray.length}/5</h5>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -29,8 +26,7 @@ export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }
                             {milestonesProp.map(element => (
                                 <Col sm="4">
                                     <MilestoneCard 
-                                    selectedCards={selectedCards}
-                                    setSelectedCards={setSelectedCards} 
+                                    isInCardArray={false} 
                                     milestoneObj={element} 
                                     />
                                 </Col>

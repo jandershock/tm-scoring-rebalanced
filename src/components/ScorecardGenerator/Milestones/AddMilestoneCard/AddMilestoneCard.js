@@ -1,11 +1,19 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Card } from "react-bootstrap"
 import { ReactComponent as Logo } from "../../../../images/add_symbol_blank_background.svg"
 import { SelectMilestoneModal } from "../SelectMilestoneModal/SelectMilestoneModal"
 import "./AddMilestoneCard.scss"
 
-export const AddMilestoneCard = ({ cardArray, milestonesProp }) => {
+export const AddMilestoneCard = ({ emptyCardArray, setEmptyCardArray, cardArray, setCardArray, milestonesProp }) => {
     const [showModal, setShowModal] = useState(false);
+
+    const propsForAddMilestoneCard = {
+        cardArray: cardArray,
+        milestonesProp: milestonesProp,
+        setCardArray: setCardArray,
+        emptyCardArray: emptyCardArray,
+        setEmptyCardArray: setEmptyCardArray
+    }
 
     const onClick = () => {
         setShowModal(true);
@@ -19,7 +27,7 @@ export const AddMilestoneCard = ({ cardArray, milestonesProp }) => {
                     <Logo></Logo>
                 </Card.Body>
             </Card>
-            <SelectMilestoneModal cardArray={cardArray} milestonesProp={milestonesProp} showModal={showModal} setShowModal={setShowModal}/>
+            <SelectMilestoneModal {...propsForAddMilestoneCard } showModal={showModal} setShowModal={setShowModal} />
         </>
     )
 }
