@@ -49,7 +49,7 @@ export const MilestonesList = () => {
                 <Row xs="1" md="5">
                     {cardArray.map((element, index) => {
                         return (
-                            <Col key={index} className="px-1 setMinHeight justify-content-between">
+                            <Col key={index} className="px-1 setMinHeight">
                                 {element}
                             </Col>
                         )
