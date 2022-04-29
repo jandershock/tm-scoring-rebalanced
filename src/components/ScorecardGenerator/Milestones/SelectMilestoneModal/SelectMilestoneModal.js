@@ -4,10 +4,14 @@ import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
 export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }) => {
 
-    const [selectedCard, setSelectedCards] = useState([]);
+    const [selectedCards, setSelectedCards] = useState([]);
 
     for (const el of milestonesProp){
         console.log(el.type);
+    }
+
+    const updateMilestones = () => {
+
     }
 
     return (
@@ -24,14 +28,18 @@ export const SelectMilestoneModal = ({ milestonesProp, showModal, setShowModal }
                         <Row lg="4">
                             {milestonesProp.map(element => (
                                 <Col sm="4">
-                                    <MilestoneCard milestoneObj={element} />
+                                    <MilestoneCard 
+                                    selectedCards={selectedCards}
+                                    setSelectedCards={setSelectedCards} 
+                                    milestoneObj={element} 
+                                    />
                                 </Col>
                             ))}
                         </Row>
                     </Container>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary">Update Milestones</Button>
+                    <Button onClick={updateMilestones} variant="primary">Update Milestones</Button>
                 </Modal.Footer>
             </Modal>
         </>

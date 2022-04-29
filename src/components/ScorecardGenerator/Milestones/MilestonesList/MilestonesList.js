@@ -4,16 +4,32 @@ import { getAllMilestones } from "../../../../modules/MilestonesAwardsManager"
 import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
 
 export const MilestonesList = () => {
-    // Need to wait until milestones are loaded
+    // Need to wait until milestones are loaded before setting milestonesArray
     const [milestonesLoaded, setMilestonesLoaded] = useState(false);
+    // Need to wait until we get loaded milestones into our state before intiliazing
+    const [readyToInitialize, setReadyToInitialize] = useState(false);
 
     // Create an array for all available Milestones
     const [milestonesArray, setMilestonesArray] = useState([]);
-
-    // Create an array for all Milestone cards
+    // Create an array to store all selected Milestone cards
     const [cardArray, setCardArray] = useState([])
 
+    // Props needed to properly render an AddMilestoneCard component
+    const [propsForAddMilestoneCard, setPropsForAddMilestoneCard] = useState({
+        milestonesProp: milestonesArray,
+        cardArray: cardArray
+    })
 
+    // Need to update props for AddMilestoneCard component whenever there are changes
+    // to the milestonesArray or the main cardArray
+    useEffect(() => {
+        const tmp = { ...propsForAddMilestoneCard };
+        [tmp.milestonesProp, tmp.cardArray] = [milestonesArray, cardArray];
+        setPropsForAddMilestoneCard(tmp);
+        if (milestonesLoaded){
+            setReadyToInitialize(true);
+        }
+    }, [milestonesArray, cardArray])
 
 
     // Initialize milestones array to an array of milestones objects
@@ -22,7 +38,7 @@ export const MilestonesList = () => {
             .then(milestones => {
                 // Set available milestones array
                 setMilestonesArray(milestones);
-                console.log("setmilestonesarray")
+                console.log("setmilestonesarray");
                 console.log(milestonesArray);
                 setMilestonesLoaded(true);
             })
@@ -32,12 +48,8 @@ export const MilestonesList = () => {
     useEffect(() => {
         console.log(milestonesArray)
         console.log("setcardarray")
-        const propsObj = {
-            milestonesProp: milestonesArray,
-            cardArray: cardArray
-        }
-        setCardArray(Array(5).fill(<AddMilestoneCard  { ...propsObj } />))
-    }, [milestonesLoaded])
+        setCardArray(Array(5).fill(<AddMilestoneCard  { ...propsForAddMilestoneCard } />))
+    }, [readyToInitialize])
 
 
     return (
