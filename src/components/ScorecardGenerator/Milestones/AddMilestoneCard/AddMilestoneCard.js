@@ -4,15 +4,13 @@ import { ReactComponent as Logo } from "../../../../images/add_symbol_blank_back
 import { SelectMilestoneModal } from "../SelectMilestoneModal/SelectMilestoneModal"
 import "./AddMilestoneCard.scss"
 
-export const AddMilestoneCard = ({ emptyCardArray, setEmptyCardArray, cardArray, setCardArray, milestonesProp }) => {
+export const AddMilestoneCard = ({ cardArray, setCardArray, milestonesProp }) => {
     const [showModal, setShowModal] = useState(false);
 
     const propsForAddMilestoneCard = {
         cardArray: cardArray,
         milestonesProp: milestonesProp,
         setCardArray: setCardArray,
-        emptyCardArray: emptyCardArray,
-        setEmptyCardArray: setEmptyCardArray
     }
 
     const onClick = () => {

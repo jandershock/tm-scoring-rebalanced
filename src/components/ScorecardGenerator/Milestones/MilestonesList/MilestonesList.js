@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { getAllMilestones } from "../../../../modules/MilestonesAwardsManager"
 import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
+import { DisplayMilestoneCard } from "../DisplayMilestoneCard/DisplayMilestoneCard"
 
 export const MilestonesList = () => {
     // Need to wait until milestones are loaded before setting milestonesArray
@@ -21,9 +22,7 @@ export const MilestonesList = () => {
     const [propsForAddMilestoneCard, setPropsForAddMilestoneCard] = useState({
         milestonesProp: milestonesArray,
         cardArray: cardArray,
-        setCardArray: setCardArray,
-        emptyCardArray: emptyCardArray,
-        setEmptyCardArray: setEmptyCardArray
+        setCardArray: setCardArray
     })
 
     // Need to update props for AddMilestoneCard component whenever there are changes
@@ -31,12 +30,16 @@ export const MilestonesList = () => {
     // returns and loads our data.
     useEffect(() => {
         const tmp = { ...propsForAddMilestoneCard };
-        [tmp.milestonesProp, tmp.cardArray, tmp.emptyCardArray] = [milestonesArray, cardArray, emptyCardArray];
+        [tmp.milestonesProp, tmp.cardArray] = [milestonesArray, cardArray];
         setPropsForAddMilestoneCard(tmp);
         if (milestonesLoaded){
             setReadyToInitialize(true);
         }
-    }, [milestonesArray, cardArray, emptyCardArray, milestonesLoaded])
+    }, [milestonesArray, cardArray, milestonesLoaded])
+
+    useEffect(() => {
+        setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard {...propsForAddMilestoneCard} />))
+    }, [propsForAddMilestoneCard])
 
 
     // Get Milestones list from db and store in milestonesArray.
@@ -50,12 +53,12 @@ export const MilestonesList = () => {
             })
     }, [])
 
-    // Initializes the card array to five empty cards once the milestones are loaded
-    useEffect(() => {
-        console.log(milestonesArray)
-        console.log("setcardarray")
-        setEmptyCardArray(Array(5).fill(<AddMilestoneCard  { ...propsForAddMilestoneCard } />))
-    }, [readyToInitialize])
+    // // Initializes the card array to five empty cards once the milestones are loaded
+    // useEffect(() => {
+    //     console.log(milestonesArray)
+    //     console.log("setcardarray")
+    //     setEmptyCardArray(Array(5).fill(<AddMilestoneCard  { ...propsForAddMilestoneCard } />))
+    // }, [readyToInitialize])
 
 
     return (
@@ -68,7 +71,7 @@ export const MilestonesList = () => {
                     {cardArray.map((element, index) => {
                         return (
                             <Col key={index} className="px-1 setMinHeight">
-                                {element}
+                                <DisplayMilestoneCard milestoneObj={element} />
                             </Col>
                         )
                     })}

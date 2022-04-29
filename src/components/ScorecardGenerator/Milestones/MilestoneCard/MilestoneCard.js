@@ -1,12 +1,20 @@
 import { useState } from "react"
 import { Card } from "react-bootstrap";
-import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard";
 
-export const MilestoneCard = ({ isInCardArray, milestoneObj }) => {
+export const MilestoneCard = ({ addToSelectedCards, removeFromSelectedCards, isInCardArray, milestoneObj }) => {
     const [isSelected, setIsSelected] = useState(isInCardArray);
 
     const handleClickMilestone = () => {
-        setIsSelected(!isSelected);
+        if (isSelected){
+            removeFromSelectedCards(milestoneObj)
+            setIsSelected(!isSelected)
+        } else {
+            if (addToSelectedCards(milestoneObj)) {
+                setIsSelected(!isSelected)
+            } else {
+                console.log("Five cards already selected")
+            }
+        }
     }
 
     return (

@@ -36,7 +36,7 @@ export const AwardsList = () => {
 
     return (
         <>
-            <Container className="mt-5">
+            <Container className="mt-5 w-100">
                 <Row>
                     <h1 className="text-center">Awards</h1>
                 </Row>

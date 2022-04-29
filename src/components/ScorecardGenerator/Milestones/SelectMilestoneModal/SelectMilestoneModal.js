@@ -1,14 +1,33 @@
 import { useState } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap"
+import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard";
 import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
-export const SelectMilestoneModal = ({ emptyCardArray, setEmptyCardArray, cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
+export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
 
-    console.log("EmptyCardArray: ", emptyCardArray);
-    console.log("cardArray: ", cardArray);
+    const [selectedCards, setSelectedCards] = useState(cardArray);
+
+    const addToSelectedCards = (obj) => {
+        if (selectedCards.length < 5){
+            const tmp = [...selectedCards];
+            tmp.push(obj);
+            setSelectedCards(tmp);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    const removeFromSelectedCards = (obj) => {
+        const tmp = [...selectedCards];
+        const index = tmp.indexOf(obj)
+        tmp.splice(index, 1);
+        setSelectedCards(tmp);
+    }
 
     const updateMilestones = () => {
-
+        setCardArray(selectedCards)
+        setShowModal(false);
     }
 
     return (
@@ -17,7 +36,7 @@ export const SelectMilestoneModal = ({ emptyCardArray, setEmptyCardArray, cardAr
                 <Modal.Header closeButton>
                     <Modal.Title>
                         <h4>Select Milestones</h4>
-                        <h5>{cardArray.length}/5</h5>
+                        <h5>{selectedCards.length}/5</h5>
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -27,7 +46,9 @@ export const SelectMilestoneModal = ({ emptyCardArray, setEmptyCardArray, cardAr
                                 <Col sm="4">
                                     <MilestoneCard 
                                     isInCardArray={false} 
-                                    milestoneObj={element} 
+                                    milestoneObj={element}
+                                    addToSelectedCards={addToSelectedCards}
+                                    removeFromSelectedCards={removeFromSelectedCards} 
                                     />
                                 </Col>
                             ))}
