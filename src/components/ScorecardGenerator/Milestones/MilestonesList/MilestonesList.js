@@ -29,7 +29,7 @@ export const MilestonesList = () => {
         if (milestonesLoaded){
             setReadyToInitialize(true);
         }
-    }, [milestonesArray, cardArray])
+    }, [milestonesArray, cardArray, milestonesLoaded])
 
 
     // Initialize milestones array to an array of milestones objects
