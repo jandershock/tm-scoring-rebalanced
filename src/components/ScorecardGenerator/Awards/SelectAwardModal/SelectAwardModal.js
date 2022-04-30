@@ -20,8 +20,8 @@ export const SelectAwardModal = ({ awardsProp, showModal, setShowModal }) => {
                 <Modal.Body>
                     <Container>
                         <Row lg="4">
-                            {awardsProp.map(element => (
-                                <Col sm="4">
+                            {awardsProp.map((element, index) => (
+                                <Col key={`${index}-awardModal`} sm="4">
                                     <AwardCard awardObj={element}/>
                                 </Col>
                             ))}

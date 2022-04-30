@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap"
-import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard";
 import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
 export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
 
-    const [selectedCards, setSelectedCards] = useState(cardArray);
+    const [selectedCards, setSelectedCards] = useState([]);
+
+    useEffect(() => {
+        setSelectedCards(cardArray);
+    }, [cardArray])
 
     const addToSelectedCards = (obj) => {
         if (selectedCards.length < 5){
@@ -42,10 +45,10 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
                 <Modal.Body>
                     <Container>
                         <Row lg="4">
-                            {milestonesProp.map(element => (
-                                <Col sm="4">
+                            {milestonesProp.map((element, index) => (
+                                <Col key={`${index}-milestoneCard`} sm="4">
                                     <MilestoneCard 
-                                    isInCardArray={false} 
+                                    isInCardArray={cardArray.includes(element)} 
                                     milestoneObj={element}
                                     addToSelectedCards={addToSelectedCards}
                                     removeFromSelectedCards={removeFromSelectedCards} 

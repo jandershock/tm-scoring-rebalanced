@@ -25,7 +25,8 @@ export const AddMilestoneCard = ({ cardArray, setCardArray, milestonesProp }) =>
                     <Logo></Logo>
                 </Card.Body>
             </Card>
-            <SelectMilestoneModal {...propsForAddMilestoneCard } showModal={showModal} setShowModal={setShowModal} />
+            {/* <SelectMilestoneModal {...propsForAddMilestoneCard } showModal={showModal} setShowModal={setShowModal} /> */}
+            <SelectMilestoneModal cardArray={cardArray} milestonesProp={milestonesProp} setCardArray={setCardArray} showModal={showModal} setShowModal={setShowModal} />
         </>
     )
 }

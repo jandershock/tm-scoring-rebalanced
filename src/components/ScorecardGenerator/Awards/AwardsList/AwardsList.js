@@ -42,7 +42,7 @@ export const AwardsList = () => {
                 </Row>
                 <Row xs="1" md="5">
                     {cardArray.map((card, index) => (
-                        <Col key={index} className="px-1 setMinHeight">
+                        <Col key={`${index}-awardlist`} className="px-1 setMinHeight">
                             <>{card}</>
                         </Col>
                     ))}

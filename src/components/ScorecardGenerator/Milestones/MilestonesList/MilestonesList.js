@@ -38,7 +38,15 @@ export const MilestonesList = () => {
     }, [milestonesArray, cardArray, milestonesLoaded])
 
     useEffect(() => {
-        setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard {...propsForAddMilestoneCard} />))
+        // setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard {...propsForAddMilestoneCard} />))
+        
+        // let tmp = []
+        // for (let i = 0; i < 5-cardArray.length; i++){
+        //     tmp.push(<AddMilestoneCard key={`${i}-addMilestoneCard`} milestonesProp={milestonesArray} cardArray={cardArray} setCardArray={setCardArray} />)
+        // }
+        // setEmptyCardArray(tmp)
+
+        setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard milestonesProp={milestonesArray} cardArray={cardArray} setCardArray={setCardArray} />))
     }, [propsForAddMilestoneCard])
 
 
@@ -70,14 +78,14 @@ export const MilestonesList = () => {
                 <Row xs="1" md="5">
                     {cardArray.map((element, index) => {
                         return (
-                            <Col key={index} className="px-1 setMinHeight">
-                                <DisplayMilestoneCard milestoneObj={element} />
+                            <Col key={`${index}-card`} className="px-1 setMinHeight">
+                                <DisplayMilestoneCard className="displayMilestoneCard" milestoneObj={element} />
                             </Col>
                         )
                     })}
                     {emptyCardArray.map((element, index) => {
                         return (
-                            <Col key={index} className="px-1 setMinHeight">
+                            <Col key={`${index}-empty`} className="px-1 setMinHeight">
                                 {element}
                             </Col>
                         )

@@ -1,0 +1,13 @@
+.modifyPadding {
+    $pad: 0.3em;
+    padding: $pad $pad !important;
+}
+
+.removePadding {
+    padding: 0em;
+    height: 50% !important;
+}
+
+.scale-50 {
+    transform: scale(0.50);
+}

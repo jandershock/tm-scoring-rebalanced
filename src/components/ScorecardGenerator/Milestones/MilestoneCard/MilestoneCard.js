@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Card } from "react-bootstrap";
 
 export const MilestoneCard = ({ addToSelectedCards, removeFromSelectedCards, isInCardArray, milestoneObj }) => {
-    const [isSelected, setIsSelected] = useState(isInCardArray);
+    const [isSelected, setIsSelected] = useState(false || isInCardArray);
 
     const handleClickMilestone = () => {
         if (isSelected){
