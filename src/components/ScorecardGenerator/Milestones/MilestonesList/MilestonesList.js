@@ -79,7 +79,7 @@ export const MilestonesList = () => {
                     {cardArray.map((element, index) => {
                         return (
                             <Col key={`${index}-card`} className="px-1 setMinHeight">
-                                <DisplayMilestoneCard className="displayMilestoneCard" milestoneObj={element} />
+                                <DisplayMilestoneCard className="displayMilestoneCard" milestoneObj={element} cardArray={cardArray} setCardArray={setCardArray}/>
                             </Col>
                         )
                     })}
