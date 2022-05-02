@@ -2,16 +2,20 @@ import { useEffect, useState } from "react"
 import { CardGroup, Card, Col, Container, Row } from "react-bootstrap"
 import { getAllAwards } from "../../../../modules/MilestonesAwardsManager"
 import { AddAwardCard } from "../AddAwardCard/AddAwardCard"
+import { DisplayAwardCard } from "../DisplayAwardCard/DisplayAwardCard"
 
 export const AwardsList = () => {
     // Boolean to check for whether or not we have loaded awards from db
     const [awardsLoaded, setAwardsLoaded] = useState(false);
 
+    // Array of Awards
+    const [awardsArray, setAwardsArray] = useState([])
+
     // Card array for our selected Awards
     const [cardArray, setCardArray] = useState([])
 
-    // Array of Awards
-    const [awardsArray, setAwardsArray] = useState([])
+    // Arry of AddAwardCards
+    const [addAwardCardArray, setAddAwardCardArray] = useState([])
 
 
     // Get all Awards from db
@@ -29,20 +33,29 @@ export const AwardsList = () => {
     }, [])
 
     // Initialize cardArray to an array of five empty Award cards when Awards from db are loaded
+    // Fill empty card array with 5 minus selected card card
     useEffect(() => {
-        setCardArray(Array(5).fill(<AddAwardCard awardsProp={awardsArray} />))
-    }, [awardsLoaded])
+        setAddAwardCardArray(Array(5 - cardArray.length).fill(<AddAwardCard awardsProp={awardsArray} cardArray={cardArray} setCardArray={setCardArray} />))
+    }, [awardsArray, cardArray])
 
 
     return (
         <>
-            <Container className="mt-5 w-100">
+            <Container className="mt-5">
                 <Row>
                     <h1 className="text-center">Awards</h1>
                 </Row>
                 <Row xs="1" md="5">
-                    {cardArray.map((card, index) => (
-                        <Col key={`${index}-awardlist`} className="px-1 setMinHeight">
+                    {console.log("Card Array in AwardsList is: ", cardArray)}
+                    {cardArray.map((card) => {
+                        return (
+                            <Col key={`${card.id}-selectedCard`} className="px-1 setMinHeight">
+                                <DisplayAwardCard awardObj={card} cardArray={cardArray} setCardArray={setCardArray} />
+                            </Col>
+                        )
+                    })}
+                    {addAwardCardArray.map((card, index) => (
+                        <Col key={`${index}-${new Date().getTime()}-addAwardCard`} className="px-1 setMinHeight">
                             <>{card}</>
                         </Col>
                     ))}

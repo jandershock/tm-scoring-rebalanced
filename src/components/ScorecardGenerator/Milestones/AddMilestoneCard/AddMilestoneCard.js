@@ -7,12 +7,6 @@ import "./AddMilestoneCard.scss"
 export const AddMilestoneCard = ({ cardArray, setCardArray, milestonesProp }) => {
     const [showModal, setShowModal] = useState(false);
 
-    const propsForAddMilestoneCard = {
-        cardArray: cardArray,
-        milestonesProp: milestonesProp,
-        setCardArray: setCardArray,
-    }
-
     const onClick = () => {
         setShowModal(true);
     }
