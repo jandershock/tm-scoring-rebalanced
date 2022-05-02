@@ -9,7 +9,7 @@ export const Login = ({setAuthUser}) => {
     const navigate = useNavigate()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/customers?email=${email.current.value}`)
+        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }
@@ -37,7 +37,6 @@ export const Login = ({setAuthUser}) => {
 
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nashville Kennels</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
@@ -55,7 +54,7 @@ export const Login = ({setAuthUser}) => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register">Need to register?</Link>
             </section>
         </main>
     )
