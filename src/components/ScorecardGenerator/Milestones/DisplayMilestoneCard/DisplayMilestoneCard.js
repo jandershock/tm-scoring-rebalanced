@@ -12,13 +12,7 @@ export const DisplayMilestoneCard = ({ milestoneObj, cardArray, setCardArray }) 
     }
 
     return (
-        <Card className="displayMilestoneCard mb-3">
-            {/* <Card.Header className="d-flex justify-content-between modifyPadding">
-                    <strong className="ps-1">{milestoneObj.name}</strong>
-                    <div className="d-flex justify-content-end align-self-center">
-                        <CloseButton onClick={handleClose} className="scale-50 align-self-start" />
-                    </div>
-                </Card.Header> */}
+        <Card className="mb-3">
             <Card.Header className="d-flex justify-content-between align-items-center">
                 <strong>{milestoneObj.name}</strong>
                 <CloseButton onClick={handleClose} className="scale-50 align-self-start" />

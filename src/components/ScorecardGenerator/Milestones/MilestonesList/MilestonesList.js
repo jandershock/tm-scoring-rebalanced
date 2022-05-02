@@ -38,14 +38,6 @@ export const MilestonesList = () => {
     }, [milestonesArray, cardArray, milestonesLoaded])
 
     useEffect(() => {
-        // setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard {...propsForAddMilestoneCard} />))
-        
-        // let tmp = []
-        // for (let i = 0; i < 5-cardArray.length; i++){
-        //     tmp.push(<AddMilestoneCard key={`${i}-addMilestoneCard`} milestonesProp={milestonesArray} cardArray={cardArray} setCardArray={setCardArray} />)
-        // }
-        // setEmptyCardArray(tmp)
-
         setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard milestonesProp={milestonesArray} cardArray={cardArray} setCardArray={setCardArray} />))
     }, [propsForAddMilestoneCard])
 
@@ -61,13 +53,6 @@ export const MilestonesList = () => {
             })
     }, [])
 
-    // // Initializes the card array to five empty cards once the milestones are loaded
-    // useEffect(() => {
-    //     console.log(milestonesArray)
-    //     console.log("setcardarray")
-    //     setEmptyCardArray(Array(5).fill(<AddMilestoneCard  { ...propsForAddMilestoneCard } />))
-    // }, [readyToInitialize])
-
 
     return (
         <>
@@ -76,16 +61,16 @@ export const MilestonesList = () => {
                     <h1 className="text-center">Milestones</h1>
                 </Row>
                 <Row xs="1" md="5">
-                    {cardArray.map((element, index) => {
+                    {cardArray.map((element) => {
                         return (
-                            <Col key={`${index}-card`} className="px-1 setMinHeight">
-                                <DisplayMilestoneCard className="displayMilestoneCard" milestoneObj={element} cardArray={cardArray} setCardArray={setCardArray}/>
+                            <Col key={`${element.id}-${new Date().getTime()}-card`} className="px-1 setMinHeight">
+                                <DisplayMilestoneCard milestoneObj={element} cardArray={cardArray} setCardArray={setCardArray}/>
                             </Col>
                         )
                     })}
                     {emptyCardArray.map((element, index) => {
                         return (
-                            <Col key={`${index}-empty`} className="px-1 setMinHeight">
+                            <Col key={`${index}-${new Date().getTime()}-empty`} className="px-1 setMinHeight">
                                 {element}
                             </Col>
                         )

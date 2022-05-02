@@ -4,11 +4,11 @@ import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
 export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
 
-    const [selectedCards, setSelectedCards] = useState([]);
+    const [selectedCards, setSelectedCards] = useState(cardArray);
 
-    useEffect(() => {
-        setSelectedCards(cardArray);
-    }, [cardArray])
+    // useEffect(() => {
+    //     setSelectedCards(cardArray);
+    // }, [cardArray])
 
     const addToSelectedCards = (obj) => {
         if (selectedCards.length < 5){
@@ -29,13 +29,18 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
     }
 
     const updateMilestones = () => {
-        setCardArray(selectedCards)
+        setCardArray(selectedCards);
+        setShowModal(false);
+    }
+
+    const handleCancel = () => {
+        setSelectedCards(cardArray);
         setShowModal(false);
     }
 
     return (
         <>
-            <Modal scrollable size="lg" show={showModal} onHide={() => setShowModal(false)}>
+            <Modal scrollable size="lg" show={showModal} onHide={handleCancel}>
                 <Modal.Header closeButton>
                     <Modal.Title>
                         <h4>Select Milestones</h4>
@@ -45,10 +50,10 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
                 <Modal.Body>
                     <Container>
                         <Row lg="4">
-                            {milestonesProp.map((element, index) => (
-                                <Col key={`${index}-milestoneCard`} sm="4">
+                            {milestonesProp.map((element) => (
+                                <Col key={`${element.id}-selected?${cardArray.includes(element)}-milestoneCard`} sm="4">
                                     <MilestoneCard 
-                                    isInCardArray={cardArray.includes(element)} 
+                                    isInCardArray={selectedCards.includes(element)} 
                                     milestoneObj={element}
                                     addToSelectedCards={addToSelectedCards}
                                     removeFromSelectedCards={removeFromSelectedCards} 

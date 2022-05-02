@@ -10,7 +10,7 @@ export const ScorecardGenerator = () => {
         <>
             <Container className="container-fluid">
                 <Row>
-                    <Col>
+                    <Col className="h-50">
                         <MilestonesList />
                     </Col>
                 </Row>

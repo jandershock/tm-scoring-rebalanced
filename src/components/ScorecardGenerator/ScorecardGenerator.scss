@@ -52,10 +52,14 @@
     transform: scale(1.01);
 }
 
+.scale70 {
+    transform: scale(.7);
+}
+
 // Forces min-height on all child Card classes for specified view width
 @media (min-width: 768px) {
     .setMinHeight > .card {
-        min-height: 10em;
+        min-height: 15.7em;
     }
 }
 
