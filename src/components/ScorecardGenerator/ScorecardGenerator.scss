@@ -5,12 +5,7 @@
     border-width: 0.1em !important;
 
     &:hover {
-        .card-header {
-            // color: $success;
-        }
-
         cursor: pointer;
-        // border-color: $success;
         transform: scale(1.01);
 
         svg {
