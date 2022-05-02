@@ -1,0 +1,73 @@
+@import "node_modules/bootstrap/scss/bootstrap/";
+
+
+.hover-style-thick {
+    border-width: 0.1em !important;
+
+    &:hover {
+        .card-header {
+            // color: $success;
+        }
+
+        cursor: pointer;
+        // border-color: $success;
+        transform: scale(1.01);
+
+        svg {
+            fill: $success;
+            cursor: pointer;
+        }
+
+        p {
+            color: $success;
+        }
+    }
+}
+
+.hover-style {
+
+    &:hover {
+        cursor: pointer;
+        border-color: $success;
+        transform: scale(1.01);
+
+        svg {
+            fill: $success;
+            cursor: pointer;
+        }
+
+        p {
+            color: $success;
+        }
+    }
+}
+
+
+.selected-card {
+    .card-header{
+        color: $primary !important;
+    }
+
+    border-color: $primary !important;
+    transform: scale(1.01);
+}
+
+.scale70 {
+    transform: scale(.7);
+}
+
+// Forces min-height on all child Card classes for specified view width
+@media (min-width: 768px) {
+    .setMinHeight > .card {
+        min-height: 15.7em;
+    }
+}
+
+// Need to apply this to Card.Body if using min-height
+.customCardBody {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .text-center;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
