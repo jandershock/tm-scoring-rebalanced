@@ -4,7 +4,7 @@ import { getAllMilestones } from "../../../../modules/MilestonesAwardsManager"
 import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
 import { DisplayMilestoneCard } from "../DisplayMilestoneCard/DisplayMilestoneCard"
 
-export const MilestonesList = () => {
+export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
     // Need to wait until milestones are loaded before setting milestonesArray
     const [milestonesLoaded, setMilestonesLoaded] = useState(false);
     // Need to wait until we get loaded milestones into our state before intiliazing
@@ -35,6 +35,8 @@ export const MilestonesList = () => {
         if (milestonesLoaded){
             setReadyToInitialize(true);
         }
+        // Updates array of Milestones in ScorecardGenerator
+        setScorecardGeneratorMilestones(cardArray);
     }, [milestonesArray, cardArray, milestonesLoaded])
 
     useEffect(() => {
