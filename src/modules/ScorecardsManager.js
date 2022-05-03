@@ -10,3 +10,8 @@ export const createScorecard = (scorecardObj) => {
     })
         .then(response => response.json());
 }
+
+export const getAllScorecardsByUserId = (userId) => {
+    return fetch(`${remoteURL}/scorecards?userId=${userId}`)
+        .then(response => response.json())
+}

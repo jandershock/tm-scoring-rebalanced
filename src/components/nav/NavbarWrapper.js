@@ -8,7 +8,7 @@ export const NavbarWrapper = ({ isAuthenticated, clearUser }) => {
             return (
                 <>
                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                    <Nav.Link as={Link} to="/registers">Register</Nav.Link>
+                    <Nav.Link as={Link} to="/register">Register</Nav.Link>
                 </>
             )
         } else {

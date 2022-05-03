@@ -9,7 +9,7 @@ import "./ScorecardGenerator.scss"
 
 export const ScorecardGenerator = ({ isAuthenticated }) => {
     let navigate = useNavigate()
-    
+
     const [scorecardGeneratorMilestones, setScorecardGeneratorMilestones] = useState([]);
     const [scorecardGeneratorAwards, setScorecardGeneratorAwards] = useState([]);
     const [isScorecardReady, setIsScorecardReady] = useState(false);
@@ -28,8 +28,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
 
     const handleSave = () => {
         if (isAuthenticated) {
-            
-            let user = sessionStorage.getItem("tm_ScoringRebalanced_user");
+            let user = JSON.parse(sessionStorage.getItem("tm_ScoringRebalanced_user"));
             let scorecardObject = {
                 userId: user.id,
                 milestoneOne: scorecardGeneratorMilestones[0].id,
@@ -44,7 +43,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
                 awardFive: scorecardGeneratorAwards[4].id
             }
             createScorecard(scorecardObject)
-                .then(navigate("/scorecards"))
+                .then(() => navigate("/scorecards"))
         } else {
             // Register modal
             console.log("Please login");
