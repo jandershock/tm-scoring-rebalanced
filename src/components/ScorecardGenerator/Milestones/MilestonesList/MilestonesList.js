@@ -7,9 +7,6 @@ import { DisplayMilestoneCard } from "../DisplayMilestoneCard/DisplayMilestoneCa
 export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
     // Need to wait until milestones are loaded before setting milestonesArray
     const [milestonesLoaded, setMilestonesLoaded] = useState(false);
-    // Need to wait until we get loaded milestones into our state before intiliazing
-    const [readyToInitialize, setReadyToInitialize] = useState(false);
-
     // Create an array for all possible Milestones
     const [milestonesArray, setMilestonesArray] = useState([]);
     // Create an array to store all selected Milestone cards
@@ -32,9 +29,6 @@ export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
         const tmp = { ...propsForAddMilestoneCard };
         [tmp.milestonesProp, tmp.cardArray] = [milestonesArray, cardArray];
         setPropsForAddMilestoneCard(tmp);
-        if (milestonesLoaded){
-            setReadyToInitialize(true);
-        }
         // Updates array of Milestones in ScorecardGenerator
         setScorecardGeneratorMilestones(cardArray);
     }, [milestonesArray, cardArray, milestonesLoaded])

@@ -17,7 +17,7 @@ export const ScorecardsList = () => {
         <>
             <h1 className="p-4 text-center">Hello {user.name}!</h1>
             <Container>
-                <Row md="2" className="g-4">
+                <Row xs="1" sm="2" className="g-4">
                     {savedScorecards.map(scorecard => {
                         return (
                             <Col key={scorecard.id}>
@@ -27,6 +27,9 @@ export const ScorecardsList = () => {
                     })}
                 </Row>
             </Container>
+            <br />
+            <hr />
+            <br />
         </>
     )
 }

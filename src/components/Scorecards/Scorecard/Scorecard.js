@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Card, CardGroup, Col, Container, Row } from "react-bootstrap"
+import { Card, Col, Container, Row } from "react-bootstrap"
 import { getMilestoneAwardById } from "../../../modules/MilestonesAwardsManager"
 
 export const Scorecard = ({ scorecardObj }) => {
@@ -38,11 +38,11 @@ export const Scorecard = ({ scorecardObj }) => {
                 </Card.Header>
                 <Card.Body>
                     <Container>
-                        <Row md="5">
+                        <Row className="pb-1">
                             {/* Milestone Images */}
                             {milestones.map(milestoneObj => {
                                 return (
-                                    <Col key={milestoneObj.id}>
+                                    <Col key={milestoneObj.id} className="px-0">
                                         <Card.Img src={`images/card_images${milestoneObj.img_path}`} />
                                     </Col>
                                 )
@@ -52,7 +52,7 @@ export const Scorecard = ({ scorecardObj }) => {
                             {/* Award Images */}
                             {awards.map(awardObj => {
                                 return (
-                                    <Col key={awardObj.id}>
+                                    <Col key={awardObj.id} className="px-0">
                                         <Card.Img src={`images/card_images${awardObj.img_path}`} />
                                     </Col>
                                 )
