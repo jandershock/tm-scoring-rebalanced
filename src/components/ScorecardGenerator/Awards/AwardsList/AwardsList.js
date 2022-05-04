@@ -4,7 +4,7 @@ import { getAllAwards } from "../../../../modules/MilestonesAwardsManager"
 import { AddAwardCard } from "../AddAwardCard/AddAwardCard"
 import { DisplayAwardCard } from "../DisplayAwardCard/DisplayAwardCard"
 
-export const AwardsList = () => {
+export const AwardsList = ({ setScorecardGeneratorAwards }) => {
     // Boolean to check for whether or not we have loaded awards from db
     const [awardsLoaded, setAwardsLoaded] = useState(false);
 
@@ -36,6 +36,7 @@ export const AwardsList = () => {
     // Fill empty card array with 5 minus selected card card
     useEffect(() => {
         setAddAwardCardArray(Array(5 - cardArray.length).fill(<AddAwardCard awardsProp={awardsArray} cardArray={cardArray} setCardArray={setCardArray} />))
+        setScorecardGeneratorAwards(cardArray);
     }, [awardsArray, cardArray])
 
 

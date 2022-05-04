@@ -8,7 +8,7 @@ export const NavbarWrapper = ({ isAuthenticated, clearUser }) => {
             return (
                 <>
                     <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                    <Nav.Link as={Link} to="/registers">Register</Nav.Link>
+                    <Nav.Link as={Link} to="/register">Register</Nav.Link>
                 </>
             )
         } else {
@@ -22,7 +22,7 @@ export const NavbarWrapper = ({ isAuthenticated, clearUser }) => {
     }
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand className="px-3">Hello Mars!</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="px-3">Hello Mars!</Navbar.Brand>
             <Navbar.Collapse className="justify-content-end px-3">
                 {displayLinks(isAuthenticated)}
             </Navbar.Collapse>

@@ -18,7 +18,7 @@ export const TMScoringRebalanced = () => {
     return (
         <>
             <NavbarWrapper isAuthenticated={isAuthenticated} clearUser={clearUser} />
-            <ApplicationViews setAuthUser={setAuthUser} />
+            <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} />
         </>
     )
 }

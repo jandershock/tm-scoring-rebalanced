@@ -2,11 +2,12 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import { ScorecardGenerator } from "./ScorecardGenerator/ScorecardGenerator";
+import { ScorecardsList } from "./Scorecards/ScorecardsList/ScorecardsList";
 
-export const ApplicationViews = ({ setAuthUser }) => {
-    // const PrivateRoute = ({ children }) => {
-    //     return isAuthenticated ? children : <Navigate to="/login" />;
-    // }
+export const ApplicationViews = ({ setAuthUser, isAuthenticated }) => {
+    const PrivateRoute = ({ children }) => {
+        return isAuthenticated ? children : <Navigate to="/login" />;
+    }
 
     return (
         <>
@@ -14,9 +15,10 @@ export const ApplicationViews = ({ setAuthUser }) => {
                 {/* <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
                 <Route exact path="/register" element={<Register />} /> */}
 
-                <Route exact path="/" element={<ScorecardGenerator />} />
+                <Route exact path="/" element={<ScorecardGenerator isAuthenticated={isAuthenticated} />} />
                 <Route path="/login" element={<Login setAuthUser={setAuthUser} />} />
                 <Route path="/register" element={<Register setAuthUser={setAuthUser} />} />
+                <Route path="/scorecards" element={<PrivateRoute><ScorecardsList /></PrivateRoute>} />
 
             </Routes>
         </>
