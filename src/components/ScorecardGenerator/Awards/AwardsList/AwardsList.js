@@ -47,7 +47,6 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
                     <h1 className="text-center">Awards</h1>
                 </Row>
                 <Row xs="1" md="5">
-                    {console.log("Card Array in AwardsList is: ", cardArray)}
                     {cardArray.map((card) => {
                         return (
                             <Col key={`${card.id}-selectedCard`} className="px-1 setMinHeight">

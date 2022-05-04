@@ -1,40 +1,34 @@
-import { readFile, utils } from "xlsx";
+import { getSynergyValuesByFirstId } from "../modules/SynergyValuesManager";
 
-let workbook = readFile("../csv/synergy.xlsx");
-let columns = utils.sheet_to_json(workbook.Sheets.Sheet1)
+export const CalculateSynergyRating = (combinedArray) => {
+    if (combinedArray.length !== 0){
+        // Sort argument array of combined MilestonesAwards by their ids in ascending order
+        combinedArray.sort((a, b) => a.id - b.id);
 
-console.log("hey", columns);
-
-console.log(workbook);
-
-/*
-    This function grabs the names of the Milestones and Awards from
-    the big column on the the Excel spreadsheet and creates a single 
-    entry in the milestones_awards table for each name
-*/
-export const CreateMilestoneAwardIds = (csvFileName) => {
-    // Empty Milestone/Award array
-
-    // Read appropriate column
-
-    // Create object for Milesstone/Award and push to Milestone/Award array
-
-    // POST all objects in Milestone/Award array
-}
-
-/*
-    This function grabs every pair of milestones and awards from the Excel 
-    file and creates corresponding entries in the synergy_values tables for
-    each pair with their corresponding synergy value
-
-    IMPORTANT NOTE:
-        You need to have run CreateMilestoneAwardIds before running this 
-        function otherwise it won't work.
-*/
-export const SaveSynergyValuesInDatabase = (csvFileName) => {
-    // Get csv file
-
-    // Parse data into pairs with values
-
-    // Create POST request for each pair
+        return Promise.all(
+            combinedArray.map(el => {
+                return getSynergyValuesByFirstId(el.id);
+            })
+        )
+            .then(response => {
+                let synergyValuesArray = combinedArray.map((el, index) => {
+                    let calculatedValue = 0;
+                    for (let i = index+1; i < combinedArray.length; i++){
+                        calculatedValue += response[index].find(el => el.secondId === combinedArray[i].id).synergyValue;
+                    }
+                    console.log(calculatedValue);
+                    return calculatedValue;
+                })
+                console.log("synergy values array", synergyValuesArray);
+                let totalSynergy = synergyValuesArray.reduce( (previous, current) => {
+                    return previous + current;
+                })
+                console.log("total synergy is: ", totalSynergy);
+                return totalSynergy;
+            })
+        
+    } else {
+        console.log('you got an empty array there partner')
+        return Promise.resolve(0);
+    }
 }

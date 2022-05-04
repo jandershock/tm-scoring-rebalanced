@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { createScorecard } from "../../modules/ScorecardsManager"
 import { AwardsList } from "./Awards/AwardsList/AwardsList"
 import { MilestonesList } from "./Milestones/MilestonesList/MilestonesList"
+import { SynergyRating } from "./SynergyRating/SynergyRating"
 
 import "./ScorecardGenerator.scss"
 
@@ -19,7 +20,6 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
         console.log("hello")
         console.log(isScorecardReady)
         if (scorecardGeneratorMilestones.length === 5 && scorecardGeneratorAwards.length === 5) {
-            console.log("scorecard is ready");
             setIsScorecardReady(true);
         } else {
             setIsScorecardReady(false);
@@ -53,7 +53,12 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
     return (
         <>
             <Container className="container-fluid">
-                <Row>
+                <Row className="mt-2">
+                    <Col className="text-center">
+                        <SynergyRating scorecardGeneratorMilestones={scorecardGeneratorMilestones} scorecardGeneratorAwards={scorecardGeneratorAwards} />
+                    </Col>
+                </Row>
+                <Row className="mt-5">
                     <Col>
                         <MilestonesList setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
                     </Col>
