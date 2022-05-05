@@ -52,7 +52,7 @@ export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
 
     return (
         <>
-            <Container className="mt-5">
+            <Container>
                 <Row>
                     <h1 className="text-center">Milestones</h1>
                 </Row>
