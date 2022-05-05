@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Col, Container, Row, Button } from "react-bootstrap"
+import { Col, Container, Row, Button, Card } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import { createScorecard } from "../../modules/ScorecardsManager"
 import { AwardsList } from "./Awards/AwardsList/AwardsList"
@@ -17,8 +17,6 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
 
 
     useEffect(() => {
-        console.log("hello")
-        console.log(isScorecardReady)
         if (scorecardGeneratorMilestones.length === 5 && scorecardGeneratorAwards.length === 5) {
             setIsScorecardReady(true);
         } else {
@@ -53,19 +51,33 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
     return (
         <>
             <Container className="container-fluid">
-                <Row className="mt-2">
-                    <Col className="text-center">
+                <Row className="mt-5 justify-content-center">
+                    <Col className="text-center" sm="6" md="4">
                         <SynergyRating scorecardGeneratorMilestones={scorecardGeneratorMilestones} scorecardGeneratorAwards={scorecardGeneratorAwards} />
                     </Col>
                 </Row>
                 <Row className="mt-5">
                     <Col>
-                        <MilestonesList setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
+                        <Card>
+                            <Card.Header>
+                                <Card.Title className="text-center"><h2>Milestones</h2></Card.Title>
+                            </Card.Header>
+                            <Card.Body>
+                                <MilestonesList setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mt-5">
                     <Col>
-                        <AwardsList setScorecardGeneratorAwards={setScorecardGeneratorAwards} />
+                        <Card>
+                            <Card.Header>
+                                <Card.Title className="text-center"><h2>Awards</h2></Card.Title>
+                            </Card.Header>
+                            <Card.Body>
+                                <AwardsList setScorecardGeneratorAwards={setScorecardGeneratorAwards} />
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
                 <Row className="justify-content-end mt-5">
@@ -76,6 +88,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
                         {<Button className="w-100" disabled={!isScorecardReady} variant="primary" type="button">Print</Button>}
                     </Col>
                 </Row>
+
             </Container>
             <br />
             <hr />

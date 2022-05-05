@@ -16,14 +16,11 @@ export const CalculateSynergyRating = (combinedArray) => {
                     for (let i = index+1; i < combinedArray.length; i++){
                         calculatedValue += response[index].find(el => el.secondId === combinedArray[i].id).synergyValue;
                     }
-                    console.log(calculatedValue);
                     return calculatedValue;
                 })
-                console.log("synergy values array", synergyValuesArray);
                 let totalSynergy = synergyValuesArray.reduce( (previous, current) => {
                     return previous + current;
                 })
-                console.log("total synergy is: ", totalSynergy);
                 return totalSynergy;
             })
         

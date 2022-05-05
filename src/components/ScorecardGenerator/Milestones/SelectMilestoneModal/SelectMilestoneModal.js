@@ -49,7 +49,7 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
-                        <Row lg="4">
+                        <Row lg="4" className="g-3">
                             {milestonesProp.map((element) => (
                                 <Col key={`${element.id}-selected?${cardArray.includes(element)}-milestoneCard`} sm="4">
                                     <MilestoneCard 

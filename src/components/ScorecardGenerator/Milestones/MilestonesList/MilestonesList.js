@@ -52,10 +52,7 @@ export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
 
     return (
         <>
-            <Container>
-                <Row>
-                    <h1 className="text-center">Milestones</h1>
-                </Row>
+            <Container className="py-2">
                 <Row xs="1" md="5">
                     {cardArray.map((element) => {
                         return (
