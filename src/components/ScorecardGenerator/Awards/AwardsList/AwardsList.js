@@ -40,7 +40,7 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
 
     return (
         <>
-            <Container className="py-2">
+            <Container className="g-2">
                 <Row xs="1" md="5">
                     {cardArray.map((card) => {
                         return (
