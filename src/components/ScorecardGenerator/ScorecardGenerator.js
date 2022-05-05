@@ -7,9 +7,9 @@ import { createScorecard } from "../../modules/ScorecardsManager"
 import { AwardsList } from "./Awards/AwardsList/AwardsList"
 import { MilestonesList } from "./Milestones/MilestonesList/MilestonesList"
 import { SynergyRating } from "./SynergyRating/SynergyRating"
+import { PrintableScorecard } from "./PrintableScorecard/PrintableScorecard";
 
 import "./ScorecardGenerator.scss"
-import { PrintableScorecard } from "./PrintableScorecard/PrintableScorecard";
 
 export const ScorecardGenerator = ({ isAuthenticated }) => {
     let navigate = useNavigate();

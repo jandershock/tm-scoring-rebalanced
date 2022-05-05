@@ -23,6 +23,7 @@ export const PrintableScorecard = forwardRef( ({ milestonesArray, awardsArray },
                         )
                     })}
                 </Row>
+                <br></br>
                 <Row className="w-100">
                     {awards.map(el => {
                         return (
