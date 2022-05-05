@@ -9,6 +9,7 @@ import { MilestonesList } from "./Milestones/MilestonesList/MilestonesList"
 import { SynergyRating } from "./SynergyRating/SynergyRating"
 
 import "./ScorecardGenerator.scss"
+import { PrintableScorecard } from "./PrintableScorecard/PrintableScorecard";
 
 export const ScorecardGenerator = ({ isAuthenticated }) => {
     let navigate = useNavigate();
@@ -57,6 +58,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
 
     return (
         <>
+            {isScorecardReady && <div style={{ display: "none"}}><PrintableScorecard ref={componentRef} milestonesArray={scorecardGeneratorMilestones} awardsArray={scorecardGeneratorAwards} /></div>}
             <Container className="container-fluid">
                 <Row className="mt-5 justify-content-center">
                     <Col className="text-center" sm="6" md="4">
@@ -70,7 +72,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
                                 <Card.Title className="text-center"><h2>Milestones</h2></Card.Title>
                             </Card.Header>
                             <Card.Body>
-                                <MilestonesList ref={componentRef} setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
+                                <MilestonesList setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
                             </Card.Body>
                         </Card>
                     </Col>
