@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Col, Container, Row, Button, Card } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
+import { useReactToPrint } from "react-to-print";
+
 import { createScorecard } from "../../modules/ScorecardsManager"
 import { AwardsList } from "./Awards/AwardsList/AwardsList"
 import { MilestonesList } from "./Milestones/MilestonesList/MilestonesList"
@@ -9,7 +11,8 @@ import { SynergyRating } from "./SynergyRating/SynergyRating"
 import "./ScorecardGenerator.scss"
 
 export const ScorecardGenerator = ({ isAuthenticated }) => {
-    let navigate = useNavigate()
+    let navigate = useNavigate();
+    const componentRef = useRef();
 
     const [scorecardGeneratorMilestones, setScorecardGeneratorMilestones] = useState([]);
     const [scorecardGeneratorAwards, setScorecardGeneratorAwards] = useState([]);
@@ -48,6 +51,10 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
         }
     }
 
+    const handlePrint = useReactToPrint({
+        content: () => componentRef.current,
+    });
+
     return (
         <>
             <Container className="container-fluid">
@@ -63,7 +70,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
                                 <Card.Title className="text-center"><h2>Milestones</h2></Card.Title>
                             </Card.Header>
                             <Card.Body>
-                                <MilestonesList setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
+                                <MilestonesList ref={componentRef} setScorecardGeneratorMilestones={setScorecardGeneratorMilestones} />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -85,7 +92,7 @@ export const ScorecardGenerator = ({ isAuthenticated }) => {
                         <Button className="w-100" disabled={!(isScorecardReady)} variant="success" type="button" onClick={handleSave}>Save</Button>
                     </Col>
                     <Col md="2">
-                        {<Button className="w-100" disabled={!isScorecardReady} variant="primary" type="button">Print</Button>}
+                        {<Button className="w-100" disabled={!isScorecardReady} variant="primary" type="button" onClick={handlePrint}>Print</Button>}
                     </Col>
                 </Row>
 
