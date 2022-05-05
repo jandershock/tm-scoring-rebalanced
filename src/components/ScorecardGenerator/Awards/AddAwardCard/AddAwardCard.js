@@ -9,7 +9,7 @@ export const AddAwardCard = ({awardsProp, cardArray, setCardArray}) => {
 
     return (
         <>
-            <Card onClick={() => setShowModal(true)} bg="light" className="hover-style">
+            <Card onClick={() => setShowModal(true)} bg="light" className="hover-style h-100 mb-0">
                 <Card.Body className="text-center customCardBody">
                     <p>Add Award Card</p>
                     <Logo></Logo>

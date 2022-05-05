@@ -31,7 +31,7 @@ export const SelectAwardModal = ({ awardsProp, cardArray, setCardArray, showModa
                 </Modal.Header>
                 <Modal.Body>
                     <Container>
-                        <Row lg="4">
+                        <Row lg="4" className="g-3">
                             {awardsProp.map((element, index) => (
                                 <Col key={`${index}-awardModal`} sm="4">
                                     <AwardCard 

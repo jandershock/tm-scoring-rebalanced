@@ -22,14 +22,12 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
     useEffect(() => {
         const loadAwards = async () => {
             const awards = await getAllAwards()
-            console.log("Awards response: ", awards);
             setAwardsArray(awards);
             setAwardsLoaded(true); // Now we can initialize our cardArray
         }
 
         loadAwards()
             .catch(console.error);
-        console.log("AwardsArray: ", awardsArray);
     }, [])
 
     // Initialize cardArray to an array of five empty Award cards when Awards from db are loaded
@@ -42,10 +40,7 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
 
     return (
         <>
-            <Container className="mt-5">
-                <Row>
-                    <h1 className="text-center">Awards</h1>
-                </Row>
+            <Container className="g-2">
                 <Row xs="1" md="5">
                     {cardArray.map((card) => {
                         return (

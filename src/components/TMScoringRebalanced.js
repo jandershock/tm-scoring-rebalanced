@@ -9,11 +9,11 @@ export const TMScoringRebalanced = () => {
         sessionStorage.setItem("tm_ScoringRebalanced_user", JSON.stringify(user))
         setIsAuthenticated(sessionStorage.getItem("tm_ScoringRebalanced_user") !== null)
     }
-    
+
     const clearUser = () => {
         sessionStorage.clear();
         setIsAuthenticated(sessionStorage.getItem("tm_ScoringRebalanced_user") !== null)
-      }
+    }
 
     return (
         <>

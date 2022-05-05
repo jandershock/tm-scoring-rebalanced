@@ -4,14 +4,11 @@ export const DisplayAwardCard = ({ awardObj, cardArray, setCardArray }) => {
     const handleClose = () => {
         let tmp = [...cardArray];
         tmp.splice(tmp.indexOf(awardObj), 1);
-        console.log(tmp);
         setCardArray(tmp);
     }
 
-    console.log("inside of displayawardcard")
-
     return (
-        <Card className="mb-3">
+        <Card className="h-100">
             <Card.Header className="d-flex justify-content-between align-items-center">
                 <strong>{awardObj.name}</strong>
                 <CloseButton onClick={handleClose} className="scale-50 align-self-start" />

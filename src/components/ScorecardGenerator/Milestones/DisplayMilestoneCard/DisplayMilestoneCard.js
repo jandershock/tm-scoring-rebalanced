@@ -6,12 +6,11 @@ export const DisplayMilestoneCard = ({ milestoneObj, cardArray, setCardArray }) 
     const handleClose = () => {
         let tmp = [...cardArray];
         tmp.splice(tmp.indexOf(milestoneObj), 1);
-        console.log(tmp);
         setCardArray(tmp);
     }
 
     return (
-        <Card className="mb-3">
+        <Card className="h-100">
             <Card.Header className="d-flex justify-content-between align-items-center">
                 <strong>{milestoneObj.name}</strong>
                 <CloseButton onClick={handleClose} className="scale-50 align-self-start" />

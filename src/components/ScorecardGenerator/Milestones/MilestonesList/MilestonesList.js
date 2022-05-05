@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, forwardRef } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import { getAllMilestones } from "../../../../modules/MilestonesAwardsManager"
 import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
 import { DisplayMilestoneCard } from "../DisplayMilestoneCard/DisplayMilestoneCard"
 
-export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
+export const MilestonesList = forwardRef( ({ setScorecardGeneratorMilestones }, ref) => {
     // Need to wait until milestones are loaded before setting milestonesArray
     const [milestonesLoaded, setMilestonesLoaded] = useState(false);
     // Create an array for all possible Milestones
@@ -52,10 +52,7 @@ export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
 
     return (
         <>
-            <Container>
-                <Row>
-                    <h1 className="text-center">Milestones</h1>
-                </Row>
+            <Container className="g-2" ref={ref}>
                 <Row xs="1" md="5">
                     {cardArray.map((element) => {
                         return (
@@ -75,4 +72,4 @@ export const MilestonesList = ({ setScorecardGeneratorMilestones }) => {
             </Container>
         </>
     )
-}
+})

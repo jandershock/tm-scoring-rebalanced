@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card } from "react-bootstrap";
 import { CalculateSynergyRating } from "../../../helpers/SynergyData"
 
 export const SynergyRating = ({ scorecardGeneratorMilestones, scorecardGeneratorAwards }) => {
@@ -11,8 +12,14 @@ export const SynergyRating = ({ scorecardGeneratorMilestones, scorecardGenerator
 
     return (
         <>
-            <h1 className="text-center">This is the Synergy Rating!</h1>
-            <h2>{synergyRating}</h2>
+            <Card>
+                <Card.Header>
+                    <Card.Title className="text-center"><h2>Synergy Rating</h2></Card.Title>
+                </Card.Header>
+                <Card.Body>
+                    <h3>{synergyRating}</h3>
+                </Card.Body>
+            </Card>
         </>
     )
 }

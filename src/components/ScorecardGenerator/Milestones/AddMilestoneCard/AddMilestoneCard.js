@@ -13,7 +13,7 @@ export const AddMilestoneCard = ({ cardArray, setCardArray, milestonesProp }) =>
 
     return (
         <>
-            <Card onClick={onClick} bg="light" className="hover-style">
+            <Card onClick={onClick} bg="light" className="hover-style h-100">
                 <Card.Body className="customCardBody">
                     <p>Add Milestone Card</p>
                     <Logo></Logo>
