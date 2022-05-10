@@ -1,10 +1,10 @@
 import { Card, CloseButton } from "react-bootstrap";
 
-export const DisplayAwardCard = ({ awardObj, cardArray, setCardArray }) => {
+export const DisplayAwardCard = ({ awardObj, cardArray, modifyAwardsList }) => {
     const handleClose = () => {
         let tmp = [...cardArray];
         tmp.splice(tmp.indexOf(awardObj), 1);
-        setCardArray(tmp);
+        modifyAwardsList(tmp);
     }
 
     return (

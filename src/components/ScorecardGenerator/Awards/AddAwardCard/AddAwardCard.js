@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from "../../../../images/add_symbol_blank_back
 import { SelectAwardModal } from "../SelectAwardModal/SelectAwardModal"
 import "./AddAwardCard.scss"
 
-export const AddAwardCard = ({awardsProp, cardArray, setCardArray}) => {
+export const AddAwardCard = ({awardsProp, cardArray, setCardArray, setAddAwardCardArray}) => {
     const [showModal, setShowModal] = useState(false);
 
     return (
@@ -15,7 +15,7 @@ export const AddAwardCard = ({awardsProp, cardArray, setCardArray}) => {
                     <Logo></Logo>
                 </Card.Body>
             </Card>
-            <SelectAwardModal awardsProp={awardsProp} cardArray={cardArray} setCardArray={setCardArray} showModal={showModal} setShowModal={setShowModal}></SelectAwardModal>
+            <SelectAwardModal awardsProp={awardsProp} cardArray={cardArray} setCardArray={setCardArray} setAddAwardCardArray={setAddAwardCardArray} showModal={showModal} setShowModal={setShowModal}></SelectAwardModal>
         </>
     )
 }
