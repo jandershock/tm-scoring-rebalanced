@@ -15,7 +15,7 @@ export const DisplayAwardCard = ({ awardObj, cardArray, setCardArray }) => {
             </Card.Header>
             <Card.Img className="p-3" src={`images/card_images${awardObj.img_path}`} />
             <Card.Body>
-                Description goes here . . .
+                <small>{awardObj.description}</small>
             </Card.Body>
         </Card>
     )

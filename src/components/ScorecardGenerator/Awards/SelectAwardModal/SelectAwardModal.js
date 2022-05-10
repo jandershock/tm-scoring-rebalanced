@@ -33,7 +33,7 @@ export const SelectAwardModal = ({ awardsProp, cardArray, setCardArray, showModa
                     <Container>
                         <Row lg="4" className="g-3">
                             {awardsProp.map((element, index) => (
-                                <Col key={`${index}-awardModal`} sm="4">
+                                <Col key={`${index}-awardModal`} sm="4" className="setMinHeightModalElements">
                                     <AwardCard 
                                         awardObj={element}
                                         isSelected={selectedCards.find(selectedCard => selectedCard === element)}

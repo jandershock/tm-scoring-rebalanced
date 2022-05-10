@@ -1,7 +1,9 @@
 import { forwardRef, useEffect, useState } from "react"
 import { Card, Col, Container, Row } from "react-bootstrap"
 
-export const PrintableScorecard = forwardRef( ({ milestonesArray, awardsArray }, ref) => {
+import "./PrintableScorecard.scss"
+
+export const PrintableScorecard = forwardRef(({ milestonesArray, awardsArray }, ref) => {
     const [milestones, setMilestones] = useState(milestonesArray);
     const [awards, setAwards] = useState(awardsArray);
 
@@ -13,7 +15,8 @@ export const PrintableScorecard = forwardRef( ({ milestonesArray, awardsArray },
     return (
         <>
             <Container ref={ref}>
-                <br></br>
+                {/* <br></br> */}
+                <hr className="custom_hr"></hr>
                 <Row className="w-100">
                     {milestones.map(el => {
                         return (
@@ -23,7 +26,7 @@ export const PrintableScorecard = forwardRef( ({ milestonesArray, awardsArray },
                         )
                     })}
                 </Row>
-                <br></br>
+                <hr className="custom_hr"></hr>
                 <Row className="w-100">
                     {awards.map(el => {
                         return (
@@ -33,6 +36,7 @@ export const PrintableScorecard = forwardRef( ({ milestonesArray, awardsArray },
                         )
                     })}
                 </Row>
+                <hr className="custom_hr"></hr>
             </Container>
         </>
     )

@@ -18,13 +18,13 @@ export const MilestoneCard = ({ addToSelectedCards, removeFromSelectedCards, isI
     }
 
     return (
-        <Card onClick={handleClickMilestone} className={`hover-style-thick ${isSelected ? 'selected-card' : ''}`}>
+        <Card onClick={handleClickMilestone} className={`h-100 hover-style-thick ${isSelected ? 'selected-card' : ''}`}>
             <Card.Header>
                 <strong>{milestoneObj.name}</strong>
             </Card.Header>
             <Card.Img className="p-3" src={`images/card_images${milestoneObj.img_path}`} />
             <Card.Body>
-                Description goes here . . .
+                <small>{milestoneObj.description}</small>
             </Card.Body>
         </Card>
     )

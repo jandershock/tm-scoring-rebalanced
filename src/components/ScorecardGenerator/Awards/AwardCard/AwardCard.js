@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Card } from "react-bootstrap"
 
 
@@ -23,13 +22,13 @@ export const AwardCard = ({ awardObj, isSelected, selectedCards, setSelectedCard
     }
 
 return (
-    <Card onClick={handleClickAward} className={`hover-style-thick ${isSelected ? `selected-card` : ''}`}>
+    <Card onClick={handleClickAward} className={`h-100 hover-style-thick ${isSelected ? `selected-card` : ''}`}>
         <Card.Header>
             <strong>{awardObj.name}</strong>
         </Card.Header>
         <Card.Img className="p-3" src={`images/card_images${awardObj.img_path}`} />
         <Card.Body>
-            Description goes here . . .
+            <small>{awardObj.description}</small>
         </Card.Body>
     </Card>
 )
