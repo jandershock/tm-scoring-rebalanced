@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap"
 import { MilestoneCard } from "../MilestoneCard/MilestoneCard";
 
-export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, showModal, setShowModal }) => {
+export const SelectMilestoneModal = ({ cardArray, modifyMilestonesList, milestonesProp, showModal, setShowModal }) => {
 
     const [selectedCards, setSelectedCards] = useState(cardArray);
 
@@ -29,7 +29,7 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
     }
 
     const updateMilestones = () => {
-        setCardArray(selectedCards);
+        modifyMilestonesList(selectedCards)
         setShowModal(false);
     }
 

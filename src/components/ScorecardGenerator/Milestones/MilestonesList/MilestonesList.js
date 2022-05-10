@@ -5,8 +5,6 @@ import { AddMilestoneCard } from "../AddMilestoneCard/AddMilestoneCard"
 import { DisplayMilestoneCard } from "../DisplayMilestoneCard/DisplayMilestoneCard"
 
 export const MilestonesList = forwardRef( ({ setScorecardGeneratorMilestones }, ref) => {
-    // Need to wait until milestones are loaded before setting milestonesArray
-    const [milestonesLoaded, setMilestonesLoaded] = useState(false);
     // Create an array for all possible Milestones
     const [milestonesArray, setMilestonesArray] = useState([]);
     // Create an array to store all selected Milestone cards
@@ -14,28 +12,22 @@ export const MilestonesList = forwardRef( ({ setScorecardGeneratorMilestones }, 
     // Create an array to store AddMilestoneCards
     const [emptyCardArray, setEmptyCardArray] = useState([])
 
-
-    // Props needed to properly render an AddMilestoneCard component
-    const [propsForAddMilestoneCard, setPropsForAddMilestoneCard] = useState({
-        milestonesProp: milestonesArray,
-        cardArray: cardArray,
-        setCardArray: setCardArray
-    })
+    const modifyMilestonesList = (newCardArray) => {
+        setCardArray(newCardArray);
+        setEmptyCardArray(Array(5 - newCardArray.length).fill(<AddMilestoneCard milestonesProp={milestonesArray} cardArray={newCardArray} modifyMilestonesList={modifyMilestonesList} />))
+    }
 
     // Need to update props for AddMilestoneCard component whenever there are changes
     // to the milestonesArray, the main cardArray, the emptyCardArray, or if our fetch to the db 
     // returns and loads our data.
     useEffect(() => {
-        const tmp = { ...propsForAddMilestoneCard };
-        [tmp.milestonesProp, tmp.cardArray] = [milestonesArray, cardArray];
-        setPropsForAddMilestoneCard(tmp);
         // Updates array of Milestones in ScorecardGenerator
         setScorecardGeneratorMilestones(cardArray);
-    }, [milestonesArray, cardArray, milestonesLoaded])
+    }, [cardArray])
 
     useEffect(() => {
-        setEmptyCardArray(Array(5-cardArray.length).fill(<AddMilestoneCard milestonesProp={milestonesArray} cardArray={cardArray} setCardArray={setCardArray} />))
-    }, [propsForAddMilestoneCard])
+        setEmptyCardArray(Array(5).fill(<AddMilestoneCard milestonesProp={milestonesArray} cardArray={cardArray} modifyMilestonesList={modifyMilestonesList} />))
+    }, [milestonesArray])
 
 
     // Get Milestones list from db and store in milestonesArray.
@@ -45,7 +37,6 @@ export const MilestonesList = forwardRef( ({ setScorecardGeneratorMilestones }, 
             .then(milestones => {
                 // Set available milestones array
                 setMilestonesArray(milestones);
-                setMilestonesLoaded(true);
             })
     }, [])
 
@@ -56,8 +47,8 @@ export const MilestonesList = forwardRef( ({ setScorecardGeneratorMilestones }, 
                 <Row xs="1" md="5">
                     {cardArray.map((element) => {
                         return (
-                            <Col key={`${element.id}-${new Date().getTime()}-card`} className="px-1 setMinHeight">
-                                <DisplayMilestoneCard milestoneObj={element} cardArray={cardArray} setCardArray={setCardArray}/>
+                            <Col key={`${element.id}-card`} className="px-1 setMinHeight">
+                                <DisplayMilestoneCard milestoneObj={element} cardArray={cardArray} modifyMilestonesList={modifyMilestonesList}/>
                             </Col>
                         )
                     })}

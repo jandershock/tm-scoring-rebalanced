@@ -5,9 +5,6 @@ import { AddAwardCard } from "../AddAwardCard/AddAwardCard"
 import { DisplayAwardCard } from "../DisplayAwardCard/DisplayAwardCard"
 
 export const AwardsList = ({ setScorecardGeneratorAwards }) => {
-    // Boolean to check for whether or not we have loaded awards from db
-    const [awardsLoaded, setAwardsLoaded] = useState(false);
-
     // Array of Awards
     const [awardsArray, setAwardsArray] = useState([])
 
@@ -16,8 +13,6 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
 
     // Arry of AddAwardCards
     const [addAwardCardArray, setAddAwardCardArray] = useState([])
-
-    console.log(`AddAwardCardArray length ${addAwardCardArray.length} CardArray length ${cardArray.length}`)
 
     const modifyAwardsList = (newCardArray) => {
         setCardArray(newCardArray);
@@ -29,7 +24,6 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
         const loadAwards = async () => {
             const awards = await getAllAwards()
             setAwardsArray(awards);
-            setAwardsLoaded(true); // Now we can initialize our cardArray
         }
 
         loadAwards()
