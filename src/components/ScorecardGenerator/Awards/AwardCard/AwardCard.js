@@ -22,7 +22,7 @@ export const AwardCard = ({ awardObj, isSelected, selectedCards, setSelectedCard
     }
 
 return (
-    <Card onClick={handleClickAward} className={`hover-style-thick ${isSelected ? `selected-card` : ''}`}>
+    <Card onClick={handleClickAward} className={`h-100 hover-style-thick ${isSelected ? `selected-card` : ''}`}>
         <Card.Header>
             <strong>{awardObj.name}</strong>
         </Card.Header>

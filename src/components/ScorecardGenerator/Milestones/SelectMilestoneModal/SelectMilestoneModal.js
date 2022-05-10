@@ -51,7 +51,7 @@ export const SelectMilestoneModal = ({ cardArray, setCardArray, milestonesProp, 
                     <Container>
                         <Row lg="4" className="g-3">
                             {milestonesProp.map((element) => (
-                                <Col key={`${element.id}-selected?${cardArray.includes(element)}-milestoneCard`} sm="4">
+                                <Col key={`${element.id}-selected?${cardArray.includes(element)}-milestoneCard`} sm="4" className="setMinHeightModalElements">
                                     <MilestoneCard 
                                     isInCardArray={selectedCards.includes(element)} 
                                     milestoneObj={element}
