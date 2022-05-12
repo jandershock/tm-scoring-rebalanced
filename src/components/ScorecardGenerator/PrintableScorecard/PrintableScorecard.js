@@ -37,6 +37,28 @@ export const PrintableScorecard = forwardRef(({ milestonesArray, awardsArray }, 
                     })}
                 </Row>
                 <hr className="custom_hr"></hr>
+                
+                <br/>
+                
+                <Row>{<h2>Milestones</h2>}</Row>
+                {milestones.map(element => {
+                    return (
+                        <Row className="w-100">
+                            <p>{element.name}: {element.description}</p>
+                        </Row>
+                    )
+                })}
+
+                <br/>
+
+                <Row>{<h2>Awards</h2>}</Row>
+                {awards.map(element => {
+                    return (
+                        <Row className="w-100">
+                            <p>{element.name}: {element.description}</p>
+                        </Row>
+                    )
+                })}
             </Container>
         </>
     )
