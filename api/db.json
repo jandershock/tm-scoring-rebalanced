@@ -1,0 +1,3403 @@
+{
+  "users": [
+    {
+      "email": "bob@bob.com",
+      "name": "Bob Bob",
+      "id": 1
+    },
+    {
+      "email": "frodo.baggins@hobbiton.com",
+      "name": "Frodo Baggins",
+      "id": 2
+    }
+  ],
+  "scorecards": [
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 2,
+      "milestoneThree": 3,
+      "milestoneFour": 4,
+      "milestoneFive": 5,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 6,
+      "milestoneThree": 3,
+      "milestoneFour": 8,
+      "milestoneFive": 4,
+      "awardOne": 17,
+      "awardTwo": 22,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 24,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "milestoneOne": 13,
+      "milestoneTwo": 14,
+      "milestoneThree": 15,
+      "milestoneFour": 16,
+      "milestoneFive": 11,
+      "awardOne": 29,
+      "awardTwo": 30,
+      "awardThree": 31,
+      "awardFour": 32,
+      "awardFive": 28,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 10,
+      "milestoneTwo": 11,
+      "milestoneThree": 12,
+      "milestoneFour": 7,
+      "milestoneFive": 8,
+      "awardOne": 28,
+      "awardTwo": 24,
+      "awardThree": 23,
+      "awardFour": 27,
+      "awardFive": 26,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 10,
+      "milestoneTwo": 9,
+      "milestoneThree": 13,
+      "milestoneFour": 14,
+      "milestoneFive": 15,
+      "awardOne": 20,
+      "awardTwo": 24,
+      "awardThree": 28,
+      "awardFour": 31,
+      "awardFive": 26,
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 2,
+      "milestoneThree": 3,
+      "milestoneFour": 4,
+      "milestoneFive": 5,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 8,
+      "milestoneTwo": 12,
+      "milestoneThree": 3,
+      "milestoneFour": 11,
+      "milestoneFive": 10,
+      "awardOne": 28,
+      "awardTwo": 27,
+      "awardThree": 20,
+      "awardFour": 26,
+      "awardFive": 29,
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 5,
+      "milestoneTwo": 8,
+      "milestoneThree": 10,
+      "milestoneFour": 11,
+      "milestoneFive": 12,
+      "awardOne": 27,
+      "awardTwo": 26,
+      "awardThree": 24,
+      "awardFour": 22,
+      "awardFive": 21,
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 5,
+      "milestoneTwo": 14,
+      "milestoneThree": 6,
+      "milestoneFour": 2,
+      "milestoneFive": 3,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "milestoneOne": 1,
+      "milestoneTwo": 4,
+      "milestoneThree": 5,
+      "milestoneFour": 2,
+      "milestoneFive": 8,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 4,
+      "milestoneThree": 2,
+      "milestoneFour": 6,
+      "milestoneFive": 3,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 2,
+      "milestoneThree": 5,
+      "milestoneFour": 6,
+      "milestoneFive": 7,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 12
+    },
+    {
+      "userId": 2,
+      "milestoneOne": 1,
+      "milestoneTwo": 2,
+      "milestoneThree": 4,
+      "milestoneFour": 5,
+      "milestoneFive": 8,
+      "awardOne": 17,
+      "awardTwo": 18,
+      "awardThree": 19,
+      "awardFour": 20,
+      "awardFive": 21,
+      "id": 13
+    }
+  ],
+  "milestones_awards": [
+    {
+      "name": "Terraformer",
+      "type": "milestone",
+      "id": 1,
+      "img_path": "/terraformer.png",
+      "description": "Have a terraforming rating of at least 35"
+    },
+    {
+      "name": "Mayor",
+      "type": "milestone",
+      "id": 2,
+      "img_path": "/mayor.png",
+      "description": "Own at least 3 cities"
+    },
+    {
+      "name": "Gardener",
+      "type": "milestone",
+      "id": 3,
+      "img_path": "/gardener.png",
+      "description": "Own at least 3 greenery tiles"
+    },
+    {
+      "name": "Builder",
+      "type": "milestone",
+      "id": 4,
+      "img_path": "/builder.png",
+      "description": "Have at least 8 building tags in play"
+    },
+    {
+      "name": "Planner",
+      "type": "milestone",
+      "id": 5,
+      "img_path": "/planner.png",
+      "description": "Have at least 16 cards in hand"
+    },
+    {
+      "name": "Generalist",
+      "type": "milestone",
+      "id": 6,
+      "img_path": "/generalist.png",
+      "description": "Increase all 6 resource productions at least 1 step"
+    },
+    {
+      "name": "Specialist",
+      "type": "milestone",
+      "id": 7,
+      "img_path": "/specialist.png",
+      "description": "Have at least 10 production of any resource"
+    },
+    {
+      "name": "Ecologist",
+      "type": "milestone",
+      "id": 8,
+      "img_path": "/ecologist.png",
+      "description": "Have at least 4 bio tags (plant, microbe, animal) in play"
+      
+    },
+    {
+      "name": "Tycoon",
+      "type": "milestone",
+      "id": 9,
+      "img_path": "/tycoon.png",
+      "description": "Have at least 15 project cards (blue and green cards) in play"
+    },
+    {
+      "name": "Legend",
+      "type": "milestone",
+      "id": 10,
+      "img_path": "/legend.png",
+      "description": "Play at least 5 events"
+    },
+    {
+      "name": "Diversifier",
+      "type": "milestone",
+      "id": 11,
+      "img_path": "/diversifier.png",
+      "description": "Have at least 8 different tags in play"
+    },
+    {
+      "name": "Tactician",
+      "type": "milestone",
+      "id": 12,
+      "img_path": "/tactician.png",
+      "description": "Have 5 cards with requirements in play"
+    },
+    {
+      "name": "Polar Explorer",
+      "type": "milestone",
+      "id": 13,
+      "img_path": "/polar_explorer.png",
+      "description": "Own 3 tiles on the 2 bottom rows"
+    },
+    {
+      "name": "Energizer",
+      "type": "milestone",
+      "id": 14,
+      "img_path": "/energizer.png",
+      "description": "Have at least 6 energy production"
+    },
+    {
+      "name": "Rim settler",
+      "type": "milestone",
+      "id": 15,
+      "img_path": "/rim_settler.png",
+      "description": "Have at least 3 jovian tags in play"
+    },
+    {
+      "name": "Hoverlord",
+      "type": "milestone",
+      "id": 16,
+      "img_path": "/hoverlord.png",
+      "description": "Have at least 7 floater resources on your cards"
+    },
+    {
+      "name": "Landlord",
+      "type": "award",
+      "id": 17,
+      "img_path": "/landlord.png",
+      "description": "Own the most tiles in play"
+    },
+    {
+      "name": "Scientist",
+      "type": "award",
+      "id": 18,
+      "img_path": "/scientist.png",
+      "description": "Have the most science tags in play"
+    },
+    {
+      "name": "Banker",
+      "type": "award",
+      "id": 19,
+      "img_path": "/banker.png",
+      "description": "Have the highest M€ production"
+    },
+    {
+      "name": "Thermalist",
+      "type": "award",
+      "id": 20,
+      "img_path": "/thermalist.png",
+      "description": "Have the most heat resource cubes"
+    },
+    {
+      "name": "Miner",
+      "type": "award",
+      "id": 21,
+      "img_path": "/miner.png",
+      "description": "Have the most steel and titanium resource cubes combined"
+    },
+    {
+      "name": "Celebrity",
+      "type": "award",
+      "id": 22,
+      "img_path": "/celebrity.png",
+      "description": "Have the most cards (excluding events) in play with a cost of at least 20 M€"
+    },
+    {
+      "name": "Industrialist",
+      "type": "award",
+      "id": 23,
+      "img_path": "/industrialist.png",
+      "description": "Have the most steel and energy resource cubes combined"
+    },
+    {
+      "name": "Desert settler",
+      "type": "award",
+      "id": 24,
+      "img_path": "/desert_settler.png",
+      "description": "Own the most tiles south of the equator (the four bottom rows)"
+    },
+    {
+      "name": "Estate Dealer",
+      "type": "award",
+      "id": 25,
+      "img_path": "/estate_dealer.png",
+      "description": "Own the most tiles adjacent to ocean tiles"
+    },
+    {
+      "name": "Benefactor",
+      "type": "award",
+      "id": 26,
+      "img_path": "/benefactor.png",
+      "description": "Have the highest terraforming rating"
+    },
+    {
+      "name": "Cultivator",
+      "type": "award",
+      "id": 27,
+      "img_path": "/cultivator.png",
+      "description": "Own the most greenery tiles"
+    },
+    {
+      "name": "Magnate",
+      "type": "award",
+      "id": 28,
+      "img_path": "/magnate.png",
+      "description": "Have the most automated cards (green cards) in play"
+    },
+    {
+      "name": "Space Baron",
+      "type": "award",
+      "id": 29,
+      "img_path": "/space_baron.png",
+      "description": "Have the most space tags in play (event cards do no count)"
+    },
+    {
+      "name": "Excentric",
+      "type": "award",
+      "id": 30,
+      "img_path": "/excentric.png",
+      "description": "Have the most resources on cards"
+    },
+    {
+      "name": "Contractor",
+      "type": "award",
+      "id": 31,
+      "img_path": "/contractor.png",
+      "description": "Have the most building tags (event cards do not count) in play"
+    },
+    {
+      "name": "Venuphile",
+      "type": "award",
+      "id": 32,
+      "img_path": "/venuphile.png",
+      "description": "Have the most Venus tags in play"
+    }
+  ],
+  "synergy_values": [
+    {
+      "firstId": 1,
+      "secondId": 2,
+      "synergyValue": 0,
+      "id": 1
+    },
+    {
+      "firstId": 1,
+      "secondId": 3,
+      "synergyValue": 2,
+      "id": 2
+    },
+    {
+      "firstId": 1,
+      "secondId": 4,
+      "synergyValue": 0,
+      "id": 3
+    },
+    {
+      "firstId": 1,
+      "secondId": 5,
+      "synergyValue": 0,
+      "id": 4
+    },
+    {
+      "firstId": 1,
+      "secondId": 6,
+      "synergyValue": 0,
+      "id": 5
+    },
+    {
+      "firstId": 1,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 6
+    },
+    {
+      "firstId": 1,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 7
+    },
+    {
+      "firstId": 1,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 8
+    },
+    {
+      "firstId": 1,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 9
+    },
+    {
+      "firstId": 1,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 10
+    },
+    {
+      "firstId": 1,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 11
+    },
+    {
+      "firstId": 1,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 12
+    },
+    {
+      "firstId": 1,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 13
+    },
+    {
+      "firstId": 1,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 14
+    },
+    {
+      "firstId": 1,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 15
+    },
+    {
+      "firstId": 1,
+      "secondId": 17,
+      "synergyValue": 1,
+      "id": 16
+    },
+    {
+      "firstId": 1,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 17
+    },
+    {
+      "firstId": 1,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 18
+    },
+    {
+      "firstId": 1,
+      "secondId": 20,
+      "synergyValue": 1,
+      "id": 19
+    },
+    {
+      "firstId": 1,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 20
+    },
+    {
+      "firstId": 1,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 21
+    },
+    {
+      "firstId": 1,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 22
+    },
+    {
+      "firstId": 1,
+      "secondId": 24,
+      "synergyValue": 1,
+      "id": 23
+    },
+    {
+      "firstId": 1,
+      "secondId": 25,
+      "synergyValue": 1,
+      "id": 24
+    },
+    {
+      "firstId": 1,
+      "secondId": 26,
+      "synergyValue": 9,
+      "id": 25
+    },
+    {
+      "firstId": 1,
+      "secondId": 27,
+      "synergyValue": 2,
+      "id": 26
+    },
+    {
+      "firstId": 1,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 27
+    },
+    {
+      "firstId": 1,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 28
+    },
+    {
+      "firstId": 1,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 29
+    },
+    {
+      "firstId": 1,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 30
+    },
+    {
+      "firstId": 1,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 31
+    },
+    {
+      "firstId": 2,
+      "secondId": 3,
+      "synergyValue": 6,
+      "id": 32
+    },
+    {
+      "firstId": 2,
+      "secondId": 4,
+      "synergyValue": 0,
+      "id": 33
+    },
+    {
+      "firstId": 2,
+      "secondId": 5,
+      "synergyValue": 0,
+      "id": 34
+    },
+    {
+      "firstId": 2,
+      "secondId": 6,
+      "synergyValue": 0,
+      "id": 35
+    },
+    {
+      "firstId": 2,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 36
+    },
+    {
+      "firstId": 2,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 37
+    },
+    {
+      "firstId": 2,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 38
+    },
+    {
+      "firstId": 2,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 39
+    },
+    {
+      "firstId": 2,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 40
+    },
+    {
+      "firstId": 2,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 41
+    },
+    {
+      "firstId": 2,
+      "secondId": 13,
+      "synergyValue": 2,
+      "id": 42
+    },
+    {
+      "firstId": 2,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 43
+    },
+    {
+      "firstId": 2,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 44
+    },
+    {
+      "firstId": 2,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 45
+    },
+    {
+      "firstId": 2,
+      "secondId": 17,
+      "synergyValue": 6,
+      "id": 46
+    },
+    {
+      "firstId": 2,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 47
+    },
+    {
+      "firstId": 2,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 48
+    },
+    {
+      "firstId": 2,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 49
+    },
+    {
+      "firstId": 2,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 50
+    },
+    {
+      "firstId": 2,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 51
+    },
+    {
+      "firstId": 2,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 52
+    },
+    {
+      "firstId": 2,
+      "secondId": 24,
+      "synergyValue": 4,
+      "id": 53
+    },
+    {
+      "firstId": 2,
+      "secondId": 25,
+      "synergyValue": 4,
+      "id": 54
+    },
+    {
+      "firstId": 2,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 55
+    },
+    {
+      "firstId": 2,
+      "secondId": 27,
+      "synergyValue": 6,
+      "id": 56
+    },
+    {
+      "firstId": 2,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 57
+    },
+    {
+      "firstId": 2,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 58
+    },
+    {
+      "firstId": 2,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 59
+    },
+    {
+      "firstId": 2,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 60
+    },
+    {
+      "firstId": 2,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 61
+    },
+    {
+      "firstId": 3,
+      "secondId": 4,
+      "synergyValue": 0,
+      "id": 62
+    },
+    {
+      "firstId": 3,
+      "secondId": 5,
+      "synergyValue": 0,
+      "id": 63
+    },
+    {
+      "firstId": 3,
+      "secondId": 6,
+      "synergyValue": 0,
+      "id": 64
+    },
+    {
+      "firstId": 3,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 65
+    },
+    {
+      "firstId": 3,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 66
+    },
+    {
+      "firstId": 3,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 67
+    },
+    {
+      "firstId": 3,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 68
+    },
+    {
+      "firstId": 3,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 69
+    },
+    {
+      "firstId": 3,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 70
+    },
+    {
+      "firstId": 3,
+      "secondId": 13,
+      "synergyValue": 4,
+      "id": 71
+    },
+    {
+      "firstId": 3,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 72
+    },
+    {
+      "firstId": 3,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 73
+    },
+    {
+      "firstId": 3,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 74
+    },
+    {
+      "firstId": 3,
+      "secondId": 17,
+      "synergyValue": 6,
+      "id": 75
+    },
+    {
+      "firstId": 3,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 76
+    },
+    {
+      "firstId": 3,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 77
+    },
+    {
+      "firstId": 3,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 78
+    },
+    {
+      "firstId": 3,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 79
+    },
+    {
+      "firstId": 3,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 80
+    },
+    {
+      "firstId": 3,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 81
+    },
+    {
+      "firstId": 3,
+      "secondId": 24,
+      "synergyValue": 4,
+      "id": 82
+    },
+    {
+      "firstId": 3,
+      "secondId": 25,
+      "synergyValue": 5,
+      "id": 83
+    },
+    {
+      "firstId": 3,
+      "secondId": 26,
+      "synergyValue": 2,
+      "id": 84
+    },
+    {
+      "firstId": 3,
+      "secondId": 27,
+      "synergyValue": 9,
+      "id": 85
+    },
+    {
+      "firstId": 3,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 86
+    },
+    {
+      "firstId": 3,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 87
+    },
+    {
+      "firstId": 3,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 88
+    },
+    {
+      "firstId": 3,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 89
+    },
+    {
+      "firstId": 3,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 90
+    },
+    {
+      "firstId": 4,
+      "secondId": 5,
+      "synergyValue": 0,
+      "id": 91
+    },
+    {
+      "firstId": 4,
+      "secondId": 6,
+      "synergyValue": 0,
+      "id": 92
+    },
+    {
+      "firstId": 4,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 93
+    },
+    {
+      "firstId": 4,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 94
+    },
+    {
+      "firstId": 4,
+      "secondId": 9,
+      "synergyValue": 1,
+      "id": 95
+    },
+    {
+      "firstId": 4,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 96
+    },
+    {
+      "firstId": 4,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 97
+    },
+    {
+      "firstId": 4,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 98
+    },
+    {
+      "firstId": 4,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 99
+    },
+    {
+      "firstId": 4,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 100
+    },
+    {
+      "firstId": 4,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 101
+    },
+    {
+      "firstId": 4,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 102
+    },
+    {
+      "firstId": 4,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 103
+    },
+    {
+      "firstId": 4,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 104
+    },
+    {
+      "firstId": 4,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 105
+    },
+    {
+      "firstId": 4,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 106
+    },
+    {
+      "firstId": 4,
+      "secondId": 21,
+      "synergyValue": 1,
+      "id": 107
+    },
+    {
+      "firstId": 4,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 108
+    },
+    {
+      "firstId": 4,
+      "secondId": 23,
+      "synergyValue": 1,
+      "id": 109
+    },
+    {
+      "firstId": 4,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 110
+    },
+    {
+      "firstId": 4,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 111
+    },
+    {
+      "firstId": 4,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 112
+    },
+    {
+      "firstId": 4,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 113
+    },
+    {
+      "firstId": 4,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 114
+    },
+    {
+      "firstId": 4,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 115
+    },
+    {
+      "firstId": 4,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 116
+    },
+    {
+      "firstId": 4,
+      "secondId": 31,
+      "synergyValue": 9,
+      "id": 117
+    },
+    {
+      "firstId": 4,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 118
+    },
+    {
+      "firstId": 5,
+      "secondId": 6,
+      "synergyValue": 0,
+      "id": 119
+    },
+    {
+      "firstId": 5,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 120
+    },
+    {
+      "firstId": 5,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 121
+    },
+    {
+      "firstId": 5,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 122
+    },
+    {
+      "firstId": 5,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 123
+    },
+    {
+      "firstId": 5,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 124
+    },
+    {
+      "firstId": 5,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 125
+    },
+    {
+      "firstId": 5,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 126
+    },
+    {
+      "firstId": 5,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 127
+    },
+    {
+      "firstId": 5,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 128
+    },
+    {
+      "firstId": 5,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 129
+    },
+    {
+      "firstId": 5,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 130
+    },
+    {
+      "firstId": 5,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 131
+    },
+    {
+      "firstId": 5,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 132
+    },
+    {
+      "firstId": 5,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 133
+    },
+    {
+      "firstId": 5,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 134
+    },
+    {
+      "firstId": 5,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 135
+    },
+    {
+      "firstId": 5,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 136
+    },
+    {
+      "firstId": 5,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 137
+    },
+    {
+      "firstId": 5,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 138
+    },
+    {
+      "firstId": 5,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 139
+    },
+    {
+      "firstId": 5,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 140
+    },
+    {
+      "firstId": 5,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 141
+    },
+    {
+      "firstId": 5,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 142
+    },
+    {
+      "firstId": 5,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 143
+    },
+    {
+      "firstId": 5,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 144
+    },
+    {
+      "firstId": 5,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 145
+    },
+    {
+      "firstId": 6,
+      "secondId": 7,
+      "synergyValue": 0,
+      "id": 146
+    },
+    {
+      "firstId": 6,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 147
+    },
+    {
+      "firstId": 6,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 148
+    },
+    {
+      "firstId": 6,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 149
+    },
+    {
+      "firstId": 6,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 150
+    },
+    {
+      "firstId": 6,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 151
+    },
+    {
+      "firstId": 6,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 152
+    },
+    {
+      "firstId": 6,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 153
+    },
+    {
+      "firstId": 6,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 154
+    },
+    {
+      "firstId": 6,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 155
+    },
+    {
+      "firstId": 6,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 156
+    },
+    {
+      "firstId": 6,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 157
+    },
+    {
+      "firstId": 6,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 158
+    },
+    {
+      "firstId": 6,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 159
+    },
+    {
+      "firstId": 6,
+      "secondId": 21,
+      "synergyValue": 1,
+      "id": 160
+    },
+    {
+      "firstId": 6,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 161
+    },
+    {
+      "firstId": 6,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 162
+    },
+    {
+      "firstId": 6,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 163
+    },
+    {
+      "firstId": 6,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 164
+    },
+    {
+      "firstId": 6,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 165
+    },
+    {
+      "firstId": 6,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 166
+    },
+    {
+      "firstId": 6,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 167
+    },
+    {
+      "firstId": 6,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 168
+    },
+    {
+      "firstId": 6,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 169
+    },
+    {
+      "firstId": 6,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 170
+    },
+    {
+      "firstId": 6,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 171
+    },
+    {
+      "firstId": 7,
+      "secondId": 8,
+      "synergyValue": 0,
+      "id": 172
+    },
+    {
+      "firstId": 7,
+      "secondId": 9,
+      "synergyValue": 0,
+      "id": 173
+    },
+    {
+      "firstId": 7,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 174
+    },
+    {
+      "firstId": 7,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 175
+    },
+    {
+      "firstId": 7,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 176
+    },
+    {
+      "firstId": 7,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 177
+    },
+    {
+      "firstId": 7,
+      "secondId": 14,
+      "synergyValue": 3,
+      "id": 178
+    },
+    {
+      "firstId": 7,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 179
+    },
+    {
+      "firstId": 7,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 180
+    },
+    {
+      "firstId": 7,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 181
+    },
+    {
+      "firstId": 7,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 182
+    },
+    {
+      "firstId": 7,
+      "secondId": 19,
+      "synergyValue": 2,
+      "id": 183
+    },
+    {
+      "firstId": 7,
+      "secondId": 20,
+      "synergyValue": 1,
+      "id": 184
+    },
+    {
+      "firstId": 7,
+      "secondId": 21,
+      "synergyValue": 1,
+      "id": 185
+    },
+    {
+      "firstId": 7,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 186
+    },
+    {
+      "firstId": 7,
+      "secondId": 23,
+      "synergyValue": 1,
+      "id": 187
+    },
+    {
+      "firstId": 7,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 188
+    },
+    {
+      "firstId": 7,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 189
+    },
+    {
+      "firstId": 7,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 190
+    },
+    {
+      "firstId": 7,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 191
+    },
+    {
+      "firstId": 7,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 192
+    },
+    {
+      "firstId": 7,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 193
+    },
+    {
+      "firstId": 7,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 194
+    },
+    {
+      "firstId": 7,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 195
+    },
+    {
+      "firstId": 7,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 196
+    },
+    {
+      "firstId": 8,
+      "secondId": 9,
+      "synergyValue": 2,
+      "id": 197
+    },
+    {
+      "firstId": 8,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 198
+    },
+    {
+      "firstId": 8,
+      "secondId": 11,
+      "synergyValue": 2,
+      "id": 199
+    },
+    {
+      "firstId": 8,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 200
+    },
+    {
+      "firstId": 8,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 201
+    },
+    {
+      "firstId": 8,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 202
+    },
+    {
+      "firstId": 8,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 203
+    },
+    {
+      "firstId": 8,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 204
+    },
+    {
+      "firstId": 8,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 205
+    },
+    {
+      "firstId": 8,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 206
+    },
+    {
+      "firstId": 8,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 207
+    },
+    {
+      "firstId": 8,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 208
+    },
+    {
+      "firstId": 8,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 209
+    },
+    {
+      "firstId": 8,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 210
+    },
+    {
+      "firstId": 8,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 211
+    },
+    {
+      "firstId": 8,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 212
+    },
+    {
+      "firstId": 8,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 213
+    },
+    {
+      "firstId": 8,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 214
+    },
+    {
+      "firstId": 8,
+      "secondId": 27,
+      "synergyValue": 1,
+      "id": 215
+    },
+    {
+      "firstId": 8,
+      "secondId": 28,
+      "synergyValue": 1,
+      "id": 216
+    },
+    {
+      "firstId": 8,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 217
+    },
+    {
+      "firstId": 8,
+      "secondId": 30,
+      "synergyValue": 4,
+      "id": 218
+    },
+    {
+      "firstId": 8,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 219
+    },
+    {
+      "firstId": 8,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 220
+    },
+    {
+      "firstId": 9,
+      "secondId": 10,
+      "synergyValue": 0,
+      "id": 221
+    },
+    {
+      "firstId": 9,
+      "secondId": 11,
+      "synergyValue": 1,
+      "id": 222
+    },
+    {
+      "firstId": 9,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 223
+    },
+    {
+      "firstId": 9,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 224
+    },
+    {
+      "firstId": 9,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 225
+    },
+    {
+      "firstId": 9,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 226
+    },
+    {
+      "firstId": 9,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 227
+    },
+    {
+      "firstId": 9,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 228
+    },
+    {
+      "firstId": 9,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 229
+    },
+    {
+      "firstId": 9,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 230
+    },
+    {
+      "firstId": 9,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 231
+    },
+    {
+      "firstId": 9,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 232
+    },
+    {
+      "firstId": 9,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 233
+    },
+    {
+      "firstId": 9,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 234
+    },
+    {
+      "firstId": 9,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 235
+    },
+    {
+      "firstId": 9,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 236
+    },
+    {
+      "firstId": 9,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 237
+    },
+    {
+      "firstId": 9,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 238
+    },
+    {
+      "firstId": 9,
+      "secondId": 28,
+      "synergyValue": 5,
+      "id": 239
+    },
+    {
+      "firstId": 9,
+      "secondId": 29,
+      "synergyValue": 1,
+      "id": 240
+    },
+    {
+      "firstId": 9,
+      "secondId": 30,
+      "synergyValue": 3,
+      "id": 241
+    },
+    {
+      "firstId": 9,
+      "secondId": 31,
+      "synergyValue": 2,
+      "id": 242
+    },
+    {
+      "firstId": 9,
+      "secondId": 32,
+      "synergyValue": 2,
+      "id": 243
+    },
+    {
+      "firstId": 10,
+      "secondId": 11,
+      "synergyValue": 0,
+      "id": 244
+    },
+    {
+      "firstId": 10,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 245
+    },
+    {
+      "firstId": 10,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 246
+    },
+    {
+      "firstId": 10,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 247
+    },
+    {
+      "firstId": 10,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 248
+    },
+    {
+      "firstId": 10,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 249
+    },
+    {
+      "firstId": 10,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 250
+    },
+    {
+      "firstId": 10,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 251
+    },
+    {
+      "firstId": 10,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 252
+    },
+    {
+      "firstId": 10,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 253
+    },
+    {
+      "firstId": 10,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 254
+    },
+    {
+      "firstId": 10,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 255
+    },
+    {
+      "firstId": 10,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 256
+    },
+    {
+      "firstId": 10,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 257
+    },
+    {
+      "firstId": 10,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 258
+    },
+    {
+      "firstId": 10,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 259
+    },
+    {
+      "firstId": 10,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 260
+    },
+    {
+      "firstId": 10,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 261
+    },
+    {
+      "firstId": 10,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 262
+    },
+    {
+      "firstId": 10,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 263
+    },
+    {
+      "firstId": 10,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 264
+    },
+    {
+      "firstId": 10,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 265
+    },
+    {
+      "firstId": 11,
+      "secondId": 12,
+      "synergyValue": 0,
+      "id": 266
+    },
+    {
+      "firstId": 11,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 267
+    },
+    {
+      "firstId": 11,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 268
+    },
+    {
+      "firstId": 11,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 269
+    },
+    {
+      "firstId": 11,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 270
+    },
+    {
+      "firstId": 11,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 271
+    },
+    {
+      "firstId": 11,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 272
+    },
+    {
+      "firstId": 11,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 273
+    },
+    {
+      "firstId": 11,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 274
+    },
+    {
+      "firstId": 11,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 275
+    },
+    {
+      "firstId": 11,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 276
+    },
+    {
+      "firstId": 11,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 277
+    },
+    {
+      "firstId": 11,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 278
+    },
+    {
+      "firstId": 11,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 279
+    },
+    {
+      "firstId": 11,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 280
+    },
+    {
+      "firstId": 11,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 281
+    },
+    {
+      "firstId": 11,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 282
+    },
+    {
+      "firstId": 11,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 283
+    },
+    {
+      "firstId": 11,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 284
+    },
+    {
+      "firstId": 11,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 285
+    },
+    {
+      "firstId": 11,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 286
+    },
+    {
+      "firstId": 12,
+      "secondId": 13,
+      "synergyValue": 0,
+      "id": 287
+    },
+    {
+      "firstId": 12,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 288
+    },
+    {
+      "firstId": 12,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 289
+    },
+    {
+      "firstId": 12,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 290
+    },
+    {
+      "firstId": 12,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 291
+    },
+    {
+      "firstId": 12,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 292
+    },
+    {
+      "firstId": 12,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 293
+    },
+    {
+      "firstId": 12,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 294
+    },
+    {
+      "firstId": 12,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 295
+    },
+    {
+      "firstId": 12,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 296
+    },
+    {
+      "firstId": 12,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 297
+    },
+    {
+      "firstId": 12,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 298
+    },
+    {
+      "firstId": 12,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 299
+    },
+    {
+      "firstId": 12,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 300
+    },
+    {
+      "firstId": 12,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 301
+    },
+    {
+      "firstId": 12,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 302
+    },
+    {
+      "firstId": 12,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 303
+    },
+    {
+      "firstId": 12,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 304
+    },
+    {
+      "firstId": 12,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 305
+    },
+    {
+      "firstId": 12,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 306
+    },
+    {
+      "firstId": 13,
+      "secondId": 14,
+      "synergyValue": 0,
+      "id": 307
+    },
+    {
+      "firstId": 13,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 308
+    },
+    {
+      "firstId": 13,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 309
+    },
+    {
+      "firstId": 13,
+      "secondId": 17,
+      "synergyValue": 4,
+      "id": 310
+    },
+    {
+      "firstId": 13,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 311
+    },
+    {
+      "firstId": 13,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 312
+    },
+    {
+      "firstId": 13,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 313
+    },
+    {
+      "firstId": 13,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 314
+    },
+    {
+      "firstId": 13,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 315
+    },
+    {
+      "firstId": 13,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 316
+    },
+    {
+      "firstId": 13,
+      "secondId": 24,
+      "synergyValue": 5,
+      "id": 317
+    },
+    {
+      "firstId": 13,
+      "secondId": 25,
+      "synergyValue": 2,
+      "id": 318
+    },
+    {
+      "firstId": 13,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 319
+    },
+    {
+      "firstId": 13,
+      "secondId": 27,
+      "synergyValue": 3,
+      "id": 320
+    },
+    {
+      "firstId": 13,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 321
+    },
+    {
+      "firstId": 13,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 322
+    },
+    {
+      "firstId": 13,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 323
+    },
+    {
+      "firstId": 13,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 324
+    },
+    {
+      "firstId": 13,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 325
+    },
+    {
+      "firstId": 14,
+      "secondId": 15,
+      "synergyValue": 0,
+      "id": 326
+    },
+    {
+      "firstId": 14,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 327
+    },
+    {
+      "firstId": 14,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 328
+    },
+    {
+      "firstId": 14,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 329
+    },
+    {
+      "firstId": 14,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 330
+    },
+    {
+      "firstId": 14,
+      "secondId": 20,
+      "synergyValue": 3,
+      "id": 331
+    },
+    {
+      "firstId": 14,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 332
+    },
+    {
+      "firstId": 14,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 333
+    },
+    {
+      "firstId": 14,
+      "secondId": 23,
+      "synergyValue": 6,
+      "id": 334
+    },
+    {
+      "firstId": 14,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 335
+    },
+    {
+      "firstId": 14,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 336
+    },
+    {
+      "firstId": 14,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 337
+    },
+    {
+      "firstId": 14,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 338
+    },
+    {
+      "firstId": 14,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 339
+    },
+    {
+      "firstId": 14,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 340
+    },
+    {
+      "firstId": 14,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 341
+    },
+    {
+      "firstId": 14,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 342
+    },
+    {
+      "firstId": 14,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 343
+    },
+    {
+      "firstId": 15,
+      "secondId": 16,
+      "synergyValue": 0,
+      "id": 344
+    },
+    {
+      "firstId": 15,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 345
+    },
+    {
+      "firstId": 15,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 346
+    },
+    {
+      "firstId": 15,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 347
+    },
+    {
+      "firstId": 15,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 348
+    },
+    {
+      "firstId": 15,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 349
+    },
+    {
+      "firstId": 15,
+      "secondId": 22,
+      "synergyValue": 2,
+      "id": 350
+    },
+    {
+      "firstId": 15,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 351
+    },
+    {
+      "firstId": 15,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 352
+    },
+    {
+      "firstId": 15,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 353
+    },
+    {
+      "firstId": 15,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 354
+    },
+    {
+      "firstId": 15,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 355
+    },
+    {
+      "firstId": 15,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 356
+    },
+    {
+      "firstId": 15,
+      "secondId": 29,
+      "synergyValue": 3,
+      "id": 357
+    },
+    {
+      "firstId": 15,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 358
+    },
+    {
+      "firstId": 15,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 359
+    },
+    {
+      "firstId": 15,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 360
+    },
+    {
+      "firstId": 16,
+      "secondId": 17,
+      "synergyValue": 0,
+      "id": 361
+    },
+    {
+      "firstId": 16,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 362
+    },
+    {
+      "firstId": 16,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 363
+    },
+    {
+      "firstId": 16,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 364
+    },
+    {
+      "firstId": 16,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 365
+    },
+    {
+      "firstId": 16,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 366
+    },
+    {
+      "firstId": 16,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 367
+    },
+    {
+      "firstId": 16,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 368
+    },
+    {
+      "firstId": 16,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 369
+    },
+    {
+      "firstId": 16,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 370
+    },
+    {
+      "firstId": 16,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 371
+    },
+    {
+      "firstId": 16,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 372
+    },
+    {
+      "firstId": 16,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 373
+    },
+    {
+      "firstId": 16,
+      "secondId": 30,
+      "synergyValue": 5,
+      "id": 374
+    },
+    {
+      "firstId": 16,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 375
+    },
+    {
+      "firstId": 16,
+      "secondId": 32,
+      "synergyValue": 8,
+      "id": 376
+    },
+    {
+      "firstId": 17,
+      "secondId": 18,
+      "synergyValue": 0,
+      "id": 377
+    },
+    {
+      "firstId": 17,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 378
+    },
+    {
+      "firstId": 17,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 379
+    },
+    {
+      "firstId": 17,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 380
+    },
+    {
+      "firstId": 17,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 381
+    },
+    {
+      "firstId": 17,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 382
+    },
+    {
+      "firstId": 17,
+      "secondId": 24,
+      "synergyValue": 7,
+      "id": 383
+    },
+    {
+      "firstId": 17,
+      "secondId": 25,
+      "synergyValue": 7,
+      "id": 384
+    },
+    {
+      "firstId": 17,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 385
+    },
+    {
+      "firstId": 17,
+      "secondId": 27,
+      "synergyValue": 8,
+      "id": 386
+    },
+    {
+      "firstId": 17,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 387
+    },
+    {
+      "firstId": 17,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 388
+    },
+    {
+      "firstId": 17,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 389
+    },
+    {
+      "firstId": 17,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 390
+    },
+    {
+      "firstId": 17,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 391
+    },
+    {
+      "firstId": 18,
+      "secondId": 19,
+      "synergyValue": 0,
+      "id": 392
+    },
+    {
+      "firstId": 18,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 393
+    },
+    {
+      "firstId": 18,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 394
+    },
+    {
+      "firstId": 18,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 395
+    },
+    {
+      "firstId": 18,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 396
+    },
+    {
+      "firstId": 18,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 397
+    },
+    {
+      "firstId": 18,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 398
+    },
+    {
+      "firstId": 18,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 399
+    },
+    {
+      "firstId": 18,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 400
+    },
+    {
+      "firstId": 18,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 401
+    },
+    {
+      "firstId": 18,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 402
+    },
+    {
+      "firstId": 18,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 403
+    },
+    {
+      "firstId": 18,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 404
+    },
+    {
+      "firstId": 18,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 405
+    },
+    {
+      "firstId": 19,
+      "secondId": 20,
+      "synergyValue": 0,
+      "id": 406
+    },
+    {
+      "firstId": 19,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 407
+    },
+    {
+      "firstId": 19,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 408
+    },
+    {
+      "firstId": 19,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 409
+    },
+    {
+      "firstId": 19,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 410
+    },
+    {
+      "firstId": 19,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 411
+    },
+    {
+      "firstId": 19,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 412
+    },
+    {
+      "firstId": 19,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 413
+    },
+    {
+      "firstId": 19,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 414
+    },
+    {
+      "firstId": 19,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 415
+    },
+    {
+      "firstId": 19,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 416
+    },
+    {
+      "firstId": 19,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 417
+    },
+    {
+      "firstId": 19,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 418
+    },
+    {
+      "firstId": 20,
+      "secondId": 21,
+      "synergyValue": 0,
+      "id": 419
+    },
+    {
+      "firstId": 20,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 420
+    },
+    {
+      "firstId": 20,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 421
+    },
+    {
+      "firstId": 20,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 422
+    },
+    {
+      "firstId": 20,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 423
+    },
+    {
+      "firstId": 20,
+      "secondId": 26,
+      "synergyValue": 1,
+      "id": 424
+    },
+    {
+      "firstId": 20,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 425
+    },
+    {
+      "firstId": 20,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 426
+    },
+    {
+      "firstId": 20,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 427
+    },
+    {
+      "firstId": 20,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 428
+    },
+    {
+      "firstId": 20,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 429
+    },
+    {
+      "firstId": 20,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 430
+    },
+    {
+      "firstId": 21,
+      "secondId": 22,
+      "synergyValue": 0,
+      "id": 431
+    },
+    {
+      "firstId": 21,
+      "secondId": 23,
+      "synergyValue": 7,
+      "id": 432
+    },
+    {
+      "firstId": 21,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 433
+    },
+    {
+      "firstId": 21,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 434
+    },
+    {
+      "firstId": 21,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 435
+    },
+    {
+      "firstId": 21,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 436
+    },
+    {
+      "firstId": 21,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 437
+    },
+    {
+      "firstId": 21,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 438
+    },
+    {
+      "firstId": 21,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 439
+    },
+    {
+      "firstId": 21,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 440
+    },
+    {
+      "firstId": 21,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 441
+    },
+    {
+      "firstId": 22,
+      "secondId": 23,
+      "synergyValue": 0,
+      "id": 442
+    },
+    {
+      "firstId": 22,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 443
+    },
+    {
+      "firstId": 22,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 444
+    },
+    {
+      "firstId": 22,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 445
+    },
+    {
+      "firstId": 22,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 446
+    },
+    {
+      "firstId": 22,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 447
+    },
+    {
+      "firstId": 22,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 448
+    },
+    {
+      "firstId": 22,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 449
+    },
+    {
+      "firstId": 22,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 450
+    },
+    {
+      "firstId": 22,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 451
+    },
+    {
+      "firstId": 23,
+      "secondId": 24,
+      "synergyValue": 0,
+      "id": 452
+    },
+    {
+      "firstId": 23,
+      "secondId": 25,
+      "synergyValue": 0,
+      "id": 453
+    },
+    {
+      "firstId": 23,
+      "secondId": 26,
+      "synergyValue": 0,
+      "id": 454
+    },
+    {
+      "firstId": 23,
+      "secondId": 27,
+      "synergyValue": 0,
+      "id": 455
+    },
+    {
+      "firstId": 23,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 456
+    },
+    {
+      "firstId": 23,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 457
+    },
+    {
+      "firstId": 23,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 458
+    },
+    {
+      "firstId": 23,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 459
+    },
+    {
+      "firstId": 23,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 460
+    },
+    {
+      "firstId": 24,
+      "secondId": 25,
+      "synergyValue": 4,
+      "id": 461
+    },
+    {
+      "firstId": 24,
+      "secondId": 26,
+      "synergyValue": 1,
+      "id": 462
+    },
+    {
+      "firstId": 24,
+      "secondId": 27,
+      "synergyValue": 7,
+      "id": 463
+    },
+    {
+      "firstId": 24,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 464
+    },
+    {
+      "firstId": 24,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 465
+    },
+    {
+      "firstId": 24,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 466
+    },
+    {
+      "firstId": 24,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 467
+    },
+    {
+      "firstId": 24,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 468
+    },
+    {
+      "firstId": 25,
+      "secondId": 26,
+      "synergyValue": 1,
+      "id": 469
+    },
+    {
+      "firstId": 25,
+      "secondId": 27,
+      "synergyValue": 8,
+      "id": 470
+    },
+    {
+      "firstId": 25,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 471
+    },
+    {
+      "firstId": 25,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 472
+    },
+    {
+      "firstId": 25,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 473
+    },
+    {
+      "firstId": 25,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 474
+    },
+    {
+      "firstId": 25,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 475
+    },
+    {
+      "firstId": 26,
+      "secondId": 27,
+      "synergyValue": 3,
+      "id": 476
+    },
+    {
+      "firstId": 26,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 477
+    },
+    {
+      "firstId": 26,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 478
+    },
+    {
+      "firstId": 26,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 479
+    },
+    {
+      "firstId": 26,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 480
+    },
+    {
+      "firstId": 26,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 481
+    },
+    {
+      "firstId": 27,
+      "secondId": 28,
+      "synergyValue": 0,
+      "id": 482
+    },
+    {
+      "firstId": 27,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 483
+    },
+    {
+      "firstId": 27,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 484
+    },
+    {
+      "firstId": 27,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 485
+    },
+    {
+      "firstId": 27,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 486
+    },
+    {
+      "firstId": 28,
+      "secondId": 29,
+      "synergyValue": 0,
+      "id": 487
+    },
+    {
+      "firstId": 28,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 488
+    },
+    {
+      "firstId": 28,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 489
+    },
+    {
+      "firstId": 28,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 490
+    },
+    {
+      "firstId": 29,
+      "secondId": 30,
+      "synergyValue": 0,
+      "id": 491
+    },
+    {
+      "firstId": 29,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 492
+    },
+    {
+      "firstId": 29,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 493
+    },
+    {
+      "firstId": 30,
+      "secondId": 31,
+      "synergyValue": 0,
+      "id": 494
+    },
+    {
+      "firstId": 30,
+      "secondId": 32,
+      "synergyValue": 2,
+      "id": 495
+    },
+    {
+      "firstId": 31,
+      "secondId": 32,
+      "synergyValue": 0,
+      "id": 496
+    }
+  ]
+}
