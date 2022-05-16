@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Container, Row, Col, Modal, Card, Button } from "react-bootstrap"
+import { AddAwardCard } from "../AddAwardCard/AddAwardCard"
 import { AwardCard } from "../AwardCard/AwardCard"
 
 import "./SelectAwardModal.scss"
 
 
-export const SelectAwardModal = ({ awardsProp, cardArray, setCardArray, showModal, setShowModal }) => {
+export const SelectAwardModal = ({ awardsProp, cardArray, setCardArray, setAddAwardCardArray, showModal, setShowModal }) => {
     // Cards which appear as selected in the modal
     const [selectedCards, setSelectedCards] = useState(cardArray);
 
@@ -16,6 +17,7 @@ export const SelectAwardModal = ({ awardsProp, cardArray, setCardArray, showModa
 
     const handleUpdate = () => {
         setCardArray(selectedCards);
+        setAddAwardCardArray(Array(5 - selectedCards.length).fill(<AddAwardCard awardsProp={awardsProp} cardArray={selectedCards} setCardArray={setCardArray} setAddAwardCardArray={setAddAwardCardArray}/>))
         setShowModal(false);
     }
 

@@ -5,9 +5,6 @@ import { AddAwardCard } from "../AddAwardCard/AddAwardCard"
 import { DisplayAwardCard } from "../DisplayAwardCard/DisplayAwardCard"
 
 export const AwardsList = ({ setScorecardGeneratorAwards }) => {
-    // Boolean to check for whether or not we have loaded awards from db
-    const [awardsLoaded, setAwardsLoaded] = useState(false);
-
     // Array of Awards
     const [awardsArray, setAwardsArray] = useState([])
 
@@ -17,13 +14,16 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
     // Arry of AddAwardCards
     const [addAwardCardArray, setAddAwardCardArray] = useState([])
 
+    const modifyAwardsList = (newCardArray) => {
+        setCardArray(newCardArray);
+        setAddAwardCardArray(Array(5 - newCardArray.length).fill(<AddAwardCard awardsProp={awardsArray} cardArray={newCardArray} setCardArray={setCardArray} setAddAwardCardArray={setAddAwardCardArray}/>))
+    }
 
     // Get all Awards from db
     useEffect(() => {
         const loadAwards = async () => {
             const awards = await getAllAwards()
             setAwardsArray(awards);
-            setAwardsLoaded(true); // Now we can initialize our cardArray
         }
 
         loadAwards()
@@ -31,11 +31,13 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
     }, [])
 
     // Initialize cardArray to an array of five empty Award cards when Awards from db are loaded
-    // Fill empty card array with 5 minus selected card card
     useEffect(() => {
-        setAddAwardCardArray(Array(5 - cardArray.length).fill(<AddAwardCard awardsProp={awardsArray} cardArray={cardArray} setCardArray={setCardArray} />))
+        setAddAwardCardArray(Array(5).fill(<AddAwardCard awardsProp={awardsArray} cardArray={cardArray} setCardArray={setCardArray} setAddAwardCardArray={setAddAwardCardArray} />))
+    }, [awardsArray])
+    
+    useEffect(() => {
         setScorecardGeneratorAwards(cardArray);
-    }, [awardsArray, cardArray])
+    }, [cardArray])
 
 
     return (
@@ -45,7 +47,7 @@ export const AwardsList = ({ setScorecardGeneratorAwards }) => {
                     {cardArray.map((card) => {
                         return (
                             <Col key={`${card.id}-selectedCard`} className="px-1 setMinHeight">
-                                <DisplayAwardCard awardObj={card} cardArray={cardArray} setCardArray={setCardArray} />
+                                <DisplayAwardCard awardObj={card} cardArray={cardArray} modifyAwardsList={modifyAwardsList} />
                             </Col>
                         )
                     })}

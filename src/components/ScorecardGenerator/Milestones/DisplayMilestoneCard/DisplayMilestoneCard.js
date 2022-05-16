@@ -1,12 +1,12 @@
 import { Card, CloseButton } from "react-bootstrap"
 import "./DisplayMilestoneCard.scss"
 
-export const DisplayMilestoneCard = ({ milestoneObj, cardArray, setCardArray }) => {
+export const DisplayMilestoneCard = ({ milestoneObj, cardArray, modifyMilestonesList }) => {
 
     const handleClose = () => {
         let tmp = [...cardArray];
         tmp.splice(tmp.indexOf(milestoneObj), 1);
-        setCardArray(tmp);
+        modifyMilestonesList(tmp)
     }
 
     return (
