@@ -1,5 +1,5 @@
 # TerraScoring Mars
-Live site: https://terrascoring-mars.netlify.app/
+Live site: https://terrascoring-mars.netlify.app
 
 ## About
 TerraScoring Mars is a web app that allows Terraforming Mars players to select custom Milestone and Award 
